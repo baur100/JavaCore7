@@ -6,6 +6,7 @@ public class answer7_3 {
         int a = 15;
         ifEven(a);
 
+
         int b = 4;
         ifEven(b);
 
