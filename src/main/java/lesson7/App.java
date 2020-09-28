@@ -5,7 +5,7 @@ public class App {
         int res = summOfTwoNumbers(2,4);
         int res2 = summOfTwoNumbers(56,56);
 
-//        System.out.println(res);
+        System.out.println(res);
         System.out.println(res2);
     }
 
@@ -18,3 +18,7 @@ public class App {
         return result;
     }
 }
+
+
+
+
