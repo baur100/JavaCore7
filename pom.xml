@@ -6,6 +6,7 @@
 
     <groupId>io.testpro</groupId>
     <artifactId>JavaCore7</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -21,5 +22,8 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+        <module>untitled</module>
+    </modules>
 
 </project>
