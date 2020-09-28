@@ -20,7 +20,10 @@ public class Hw0926 {
         sum(8,3);
         sum(11, 32);
         System.out.println("\nQuestion 2:");
-        System.out.print(sum2(12,9)+", "+sum2(89,27)+", "+sum2(19,42));
+        int xx = sum2(12,9);
+        int yy = sum2(89,27);
+        int zz = sum2(19,42);
+        System.out.print(xx+", "+yy+", "+zz);
         System.out.println("\n\nQuestion 3:");
         System.out.print(isEven(9)+", "+isEven(26)+", "+isEven(42)+", "+isEven(77));
     }
