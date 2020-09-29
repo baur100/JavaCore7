@@ -13,6 +13,5 @@ public class App1 {
     public static boolean isOdd(int number) {
         boolean result = number % 2 == 1;
         return result;
-    
     }
 }
