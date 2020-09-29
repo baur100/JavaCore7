@@ -69,6 +69,7 @@ public class App2 {
 //        if (passengerAge >= 66) {
 //            System.out.println("Senior passenger = " + ticketPrice * 0.8);
 //        }
+
         if (passengerAge > 12) {
             if (passengerAge > 66) {
                 System.out.println("Senior passenger = " + ticketPrice * 0.8);
