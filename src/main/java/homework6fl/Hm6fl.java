@@ -1,4 +1,4 @@
-package homework6;
+package homework6fl;
 
 public class Hw6 {
     public static void main(String[] args) {
