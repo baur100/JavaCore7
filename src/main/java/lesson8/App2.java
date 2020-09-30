@@ -12,9 +12,9 @@ public class App2 {
 
     public static int[] getOddFromArray(int[] arr) {
         int count = 0;
-        for (int v : arr){
+        for (int v : arr){ // its a foreach loop, so it has to check every single digit (number) of the array
             if(v%2==1){
-                count++;
+                count++;//count=count (0) + 1,
             }
         }
         int[]res = new int[count];
@@ -25,6 +25,6 @@ public class App2 {
                 index++;
             }
         }
-        return res;
+          return res;
     }
 }
