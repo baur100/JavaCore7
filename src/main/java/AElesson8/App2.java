@@ -5,6 +5,9 @@ public class App2 {
       int limit = 53;
         printPrimeNumbers(limit);
 
+        boolean x = isPrime(5);
+        System.out.println(x);
+
     }
     // find prime numbers (1 is not a prime number, the smallest prime number is 2)
     public static void printPrimeNumbers(int limit) {
