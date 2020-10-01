@@ -13,5 +13,6 @@ public class Homework_3 {
             System.out.print(isEven(2) + "\n============");
             System.out.print(isEven(0) + "\n============");
             System.out.print(isEven(4));
+            System.out.print(isEven(9));
     }
 }
