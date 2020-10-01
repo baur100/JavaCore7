@@ -12,7 +12,7 @@ public class Homework_1 {
     public static void sum(int a, int b, int c){
         int d = a+b+c;
         int e = a*b*c;
-        System.out.print(d + "\n==================");
-        System.out.print(e);
+        System.out.println(d + "\n==================");
+        System.out.println(e);
     }
 }
