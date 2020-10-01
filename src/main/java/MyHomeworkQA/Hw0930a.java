@@ -29,18 +29,34 @@ public class Hw0930a {
         }
         System.out.println("The sorted array: ");
         for (int y : jumbled){
-            System.out.print(y + ", ");
+            System.out.print(y + " ");
         }
+        System.out.println("");
+    }
+
+    /*3. Create a function  which takes int[] as a param and returns min
+    of the array invoke it from main() - pass {3,9,1,8,4,8,5} as a param*/
+    public static int getMin(int[] arrNums){
+        int min = arrNums[0];
+        for (int x : arrNums){
+            if(x < min){
+                min = x;
+            }
+        }
+        return min;
     }
 
     public static void main(String[] args) {
         int[] sumThis = {2, 3, 5, 6, 7, 8};
         int answer = sum(sumThis);
-        System.out.println(answer);
+        System.out.println("Sum of array is: " + answer);
         System.out.println("=========");
         int[] sortMe = {3, 9, 1, 8, 4, 8, 5};
         sort(sortMe);
         System.out.println("=========");
+        int[] intBunch = {3, 9, 1, 8, 4, 8, 5};
+        int minimum = getMin(intBunch);
+        System.out.println("Minimum value is: " + minimum);
 
     }
 }
