@@ -5,17 +5,18 @@ public class answer8_1 {
     {
 
         int[] x = {2, 3, 4, 5, 6, 7, 8};
-        sumOfArray(x);
+        sum(x);
     }
-    public static void sumOfArray(int[] arr)
+
+    public static void sum(int[] arr)
     {
         int total =0;
         for(int v:arr)
         {
             total=total+v;
-    }
+        }
         System.out.println(total);
-}
+    }
 }
 
 
