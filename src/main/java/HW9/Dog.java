@@ -14,4 +14,12 @@ public class Dog {
         System.out.println(age + " This dog is not too old !!!");
 
     }
+
+    //for example only
+    public String getPersonInfo() {
+        return //"My dog is " + name + " " + breed + " " + age + " " + color;
+                "\tName -> " + name + "\n\tBreed -> " +
+                        breed + "\n\tYear -> " + age + "\n\tEye Color -> " + color;
+
+    }
 }

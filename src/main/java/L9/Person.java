@@ -13,5 +13,6 @@ public class Person {
 
     public String getPersonInfo() {
         return name + " " + lastName + " " + year + " " + gender;
+
     }
 }

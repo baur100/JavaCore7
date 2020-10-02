@@ -13,4 +13,11 @@ public class Cat {
         System.out.println(hairiness + " this cat has more hairiness !!!");
 
     }
+
+    //for example only
+    public String getPersonInfo() {
+        return //"my cat is " + breed + " " + age + " " + hairiness;
+                "\n\tBreed -> " +
+                        breed + "\n\tYear -> " + age + "\n\tEye Hairiness -> " + hairiness;
+    }
 }

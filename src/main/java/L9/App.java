@@ -16,15 +16,15 @@ public class App {
 
         peter.introduce();
         anna.introduce();
-
-        String annaInfo = anna.getPersonInfo();
-        System.out.println(annaInfo);
+       // String annaInfo = anna.getPersonInfo();
+        System.out.println(anna.getPersonInfo());
 
         Person james = new Person();
         james.name = "James";
         james.gender = "Male";
+        james.lastName = "Cook";
         james.introduce();
         System.out.println(james.getPersonInfo());
-    }
 
+    }
 }

@@ -27,10 +27,18 @@ public class App {
         shark.speed = "fast";
         System.out.println("I see shark, her speed is very " + shark.speed + " and breed is " + shark.breed + " type.");
 
+        dog.conformity();
         dog.lovely();
         mycat.certainty();
+        mycat.availability();
+        cock.run();
         cock.beauty();
         shark.swim();
+        shark.beauty();
+
+        System.out.println(mycat.getPersonInfo());
+        System.out.println(dog.getPersonInfo());
+
 
     }
 }

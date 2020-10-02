@@ -5,6 +5,7 @@ public class Vehicle {
     public String brand;
     public int year;
     public String color;
+    public String[] title;
 
     public void drive() {
         System.out.println("I'm " + brand + " " + model + " " + year +
@@ -13,5 +14,6 @@ public class Vehicle {
 
     public void horn() {
         System.out.println(color + " car saying BEEEEP");
+
     }
 }

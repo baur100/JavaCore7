@@ -10,7 +10,7 @@ public class Cock {
     }
 
     public void run() {
-        System.out.println(speed + "  Is very slowly !!!");
+        System.out.println(speed + "  running !!!");
 
     }
 }
