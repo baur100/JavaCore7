@@ -19,7 +19,9 @@ public class App {
         google.yearofmanufacture = 2019;
         google.price = 500;
         google.condition = "new";
-apple.iphone();
-google.android();
+
+apple.phone();
+
+google.phone();
     }
 }

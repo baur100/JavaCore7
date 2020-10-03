@@ -7,10 +7,8 @@ public class Phone {
     public String condition;
     public int yearofmanufacture;
 
-    public void iphone() {
+    public void phone() {
         System.out.println("This model is "+name+model+"."+"\nThe cost is $"+price+"."+ "\nThe condition is "+condition+"."+ "\nThe manufacture year is "+yearofmanufacture+".");
-    }
-    public void android(){
-        System.out.println("\nThis model is "+name+model+"."+"\nThe cost is $"+price+"."+ "\nThe condition is "+condition+"."+ "\nThe manufacture year is "+yearofmanufacture+".");
+
     }
 }
