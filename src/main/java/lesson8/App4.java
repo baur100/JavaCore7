@@ -8,9 +8,6 @@ public class App4 {
     }
     public static void hi(){
         System.out.println("Hola");
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
     }
 }
