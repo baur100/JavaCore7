@@ -19,7 +19,7 @@ public class hw8 {
     public static void sum(int[] arr){
         int sum=0;
         for (int v: arr){
-            sum=sum+v;
+            sum=sum+v; //sum = sum + v  sum+=v
         }
         System.out.println(sum);
            }
