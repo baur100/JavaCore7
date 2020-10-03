@@ -44,4 +44,10 @@ public class Client {
         this.dob = dob;
 
     }
+
+    public void speak() {
+        System.out.println("I'm " + firstName + " " + lastName + " " + dob +
+                " year, speaking because I'm awesome!!!");
+
+    }
 }

@@ -13,6 +13,7 @@ public class App {
         elena.setFirstName("Alenka");
         elena.setLastName("Petrova");
         elena.setdob(2000);
+        elena.speak();
 
         System.out.println(elena.getdob());
         System.out.println(elena.getLastName());
