@@ -20,6 +20,10 @@ public class App {
         checking.number = "145 874 8473";
         checking.balance = 17281;
 
+        Account savings = new Account();
+        savings.number = "145 874 0032";
+        savings.balance = 30000;
+
         checking.addMoney(2000);
 
         // Fitness app
@@ -29,11 +33,20 @@ public class App {
         barbellPress.weight = 100;
         barbellPress.reps = 10;
 
-        barbellPress.start();
+        Fitness barbellSquarts = new Fitness();
+        barbellSquarts.exercise = "Barbel squarts";
+        barbellSquarts.sets = 4;
+        barbellSquarts.weight = 120;
+        barbellSquarts.reps = 10;
+
+        barbellSquarts.start();
 
         // To do list app
         Todo list1 = new Todo();
         list1.title = "Buy milk";
+
+        Todo list2 = new Todo();
+        list2.title = "Buy bread";
 
         list1.done();
         list1.wip();
