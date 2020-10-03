@@ -18,7 +18,7 @@ public class App {
 //        myMazda.drive();
 
         House myHouse = new House(1955,3,2,"122 Maple st");
-//        myHouse.printHouseInfo();
+        myHouse.printHouseInfo();
 
         House myFriendsHouse = new House(4,2,"12 Elm st");
         myFriendsHouse.setYear(1995);
