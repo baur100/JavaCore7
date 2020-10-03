@@ -65,5 +65,23 @@ public class App {
         String fixYouInfo = fixYou.getSongInfo();
         System.out.println(fixYouInfo);
 
+        Meat beef = new Meat();        // Meat class
+        beef.type = "beef";
+        beef.from = "cattle";
+        beef.dollarPerPound = 4.26;
+
+        Meat port = new Meat();
+        port.type = "pork";
+        port.from = "pig";
+        port.dollarPerPound = 4.99;
+
+        beef.buyMeat();
+        port.buyMeat();
+
+        String getBeefInfo = beef.getMeatInto();
+        System.out.println(getBeefInfo);
+
+        String getPorkInfo = port.getMeatInto();
+        System.out.println(getPorkInfo);
     }
 }
