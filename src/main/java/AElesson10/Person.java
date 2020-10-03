@@ -25,7 +25,15 @@ public class Person {
         return this.lastName;
     }
 
-    public void setYear(int year){
-        
+    public void setYear(int year) throws Exception {
+        if(year>2020 || year<1900){
+            throw new Exception("Wrong Age");
+        }
+        this.year = year;
     }
+
+    // We can to not set getter, if the info is private and should not be able to get it
+//    public int getYear() {
+//        return year;
+//    }
 }
