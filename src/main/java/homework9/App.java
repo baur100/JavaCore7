@@ -44,7 +44,26 @@ public class App {
         String bibiInfo = beyonce.getDogInfo();
         System.out.println(bibiInfo);
 
+        Song chiquitita = new Song();     // Song class
+        chiquitita.name = "Chiquitita";
+        chiquitita.artist = "ABBA";
+        chiquitita.album = "ABBA Gold";
+        chiquitita.length = 325;
 
+        Song fixYou = new Song();
+        fixYou.name = "Fix You";
+        fixYou.artist = "Coldplay";
+        fixYou.album = "X&Y";
+        fixYou.length = 295;
+
+        chiquitita.playSong();
+        fixYou.playSong();
+
+        String chiquititaInfo = chiquitita.getSongInfo();
+        System.out.println(chiquititaInfo);
+
+        String fixYouInfo = fixYou.getSongInfo();
+        System.out.println(fixYouInfo);
 
     }
 }
