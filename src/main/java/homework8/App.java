@@ -1,6 +1,8 @@
 package homework8;
 
-public class Hw8 {
+import java.util.Arrays;
+
+public class App {
     public static void main(String[] args){
     int[] array1 = {2, 3, 5, 6, 7, 8};
     int[] array2 = {3, 9, 1, 8, 4, 8, 5};
@@ -18,19 +20,17 @@ public class Hw8 {
     public static int sum(int[] array){
         int sum = 0;
         for (int i = 0; i < array.length; i++){
-            sum = sum + array[i];
+            sum += array[i];
         }
         return sum;
     }
 
     public static void sort(int[] array){
-        int[] sortedArray = new int[array.length];
-        int newMin = array[0];
-        for (int i = 0; i < sortedArray.length; i++)
-            for (int j = 0; j < array.length; j++) {
-                if(newMin < array[j])
-
-        }
+        Arrays.sort(array);
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < array.length; i++)
+            System.out.print(array[i] + " ");
+        System.out.println();
     }
 
     public static int min(int[] array){
