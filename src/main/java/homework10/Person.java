@@ -49,7 +49,7 @@ public class Person {
     }
 
     public void print() {
-        System.out.println( "Person{" +
+        System.out.println("Person{" +
                 "name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
