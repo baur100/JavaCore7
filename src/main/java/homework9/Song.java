@@ -7,7 +7,7 @@ public class Song {
     public int length;
 
     public void playSong(){
-        System.out.println("Play song" + name + " by " + artist);
+        System.out.println("Play song " + name + " by " + artist);
     }
 
     public String getSongInfo(){
