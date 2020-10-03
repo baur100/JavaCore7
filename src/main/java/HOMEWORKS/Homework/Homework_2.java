@@ -1,4 +1,4 @@
-package Homework;
+package HOMEWORKS.Homework;
 
     //Create a new function `sum2` - it takes in 2 params (int, int) and returns their sum.
     //Invoke it 3 times with different params. Save a result in a variable. print out variavle (hint - returning type - int)

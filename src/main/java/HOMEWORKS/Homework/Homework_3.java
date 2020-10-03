@@ -1,4 +1,4 @@
-package Homework;
+package HOMEWORKS.Homework;
 
             //Create function `isEven` - int takes an int as an argument and return true if it is even or false if it is odd
             //invoke it with 4 different params - print out results
