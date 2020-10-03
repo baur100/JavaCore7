@@ -33,13 +33,13 @@ public class App {
         barbellPress.weight = 100;
         barbellPress.reps = 10;
 
-        Fitness barbellSquarts = new Fitness();
-        barbellSquarts.exercise = "Barbel squarts";
-        barbellSquarts.sets = 4;
-        barbellSquarts.weight = 120;
-        barbellSquarts.reps = 10;
+        Fitness barbellSquats = new Fitness();
+        barbellSquats.exercise = "Barbel squats";
+        barbellSquats.sets = 4;
+        barbellSquats.weight = 120;
+        barbellSquats.reps = 10;
 
-        barbellSquarts.start();
+        barbellSquats.start();
 
         // To do list app
         Todo list1 = new Todo();
