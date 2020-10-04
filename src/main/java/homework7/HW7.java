@@ -39,10 +39,6 @@ public class HW7 {
     }
 
 
-
-
-
-
     public static void main(String[]args){
     System.out.println("Question 1----------------------------------------------------------------");
     sum(2,5);
