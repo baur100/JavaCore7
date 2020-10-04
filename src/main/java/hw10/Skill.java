@@ -20,4 +20,10 @@ public class Skill {
     public int getYears() {
         return years;
     }
+
+    public void printInfo() {
+        System.out.println("Skills: " +
+                "\nSkill: " + skillName +
+                "\nyears: " + years);
+    }
 }

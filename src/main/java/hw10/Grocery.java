@@ -5,6 +5,7 @@ public class Grocery {
     private boolean available;
     private double price;
 
+    public Grocery() {}
 
     public Grocery(String name, boolean available, double price) {
         this.name = name;
@@ -14,10 +15,6 @@ public class Grocery {
     public void setAvailable(boolean tOrF) {
         this.available = tOrF;
     }
-    public void updatePrice(double newPrice) {
-        this.price = newPrice;
-    }
-
     public String getName() {
         return this.name;
     }
@@ -26,5 +23,16 @@ public class Grocery {
     }
     public double getPrice() {
         return this.price;
+    }
+
+    public void updatePrice(double newPrice) {
+        this.price = newPrice;
+    }
+
+    public void printInfo() {
+        System.out.println("Grocery: " +
+                "\nName: " + name +
+                "\nAvailable: " + available +
+                "\nprice: " + price);
     }
 }

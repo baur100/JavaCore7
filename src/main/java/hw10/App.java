@@ -30,10 +30,11 @@ public class App {
 //        System.out.println(apple[1].getAvailable());
 
 //        MOVIE CLASS
-        Movie avengers1 = new Movie("The Avengers", 2012, 8.0, 50);
+        Movie avengers = new Movie("The Avengers", 2012, 8.0, 50);
+        Movie ironman = new Movie("Iron Man", 2008, 7.9, 470);
 
-        avengers1.addRating(10);
-//        System.out.println("Rating: " + avengers1.getRating() + " | " + avengers1.getRaters());
+        avengers.addRating(10);
+//        System.out.println("Rating: " + avengers.getRating() + " | " + avengers.getRaters());
 
 //        SKILL CLASS
         Skill[] dev = {
@@ -46,5 +47,11 @@ public class App {
 //        for (Skill v : dev) {
 //            System.out.println("\t" + v.getSkillName() + " " + v.getYears() + " years");
 //        }
+
+//        print info for each class
+        s10.printInfo();
+        apple[0].printInfo();
+        avengers.printInfo();
+        dev[1].printInfo();
     }
 }

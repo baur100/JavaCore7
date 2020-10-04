@@ -4,17 +4,19 @@ public class Movie {
     private String name;
     private int year;
     private double rating;
-    private int ratedCount;
+    private int raters;
 
-    public Movie(String name, int year, double rating, int ratedCount) {
+    public Movie() {}
+
+    public Movie(String name, int year, double rating, int raters) {
         this.name = name;
         this.year = year;
         this.rating = rating;
-        this.ratedCount = ratedCount;
+        this.raters = raters;
     }
 
     public void addRating(double yourRating) {
-        rating = (rating * ratedCount + yourRating) / ratedCount++;
+        rating = (rating * raters + yourRating) / raters++;
     }
 
     public String getName() {
@@ -30,6 +32,14 @@ public class Movie {
     }
 
     public int getRaters() {
-        return ratedCount;
+        return raters;
+    }
+
+    public void printInfo() {
+        System.out.println("Movie: " +
+                "\nName: " + name +
+                "\nYear: " + year +
+                "\nrating: " + rating +
+                "\nraters: " + raters);
     }
 }
