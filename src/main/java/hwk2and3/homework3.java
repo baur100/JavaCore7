@@ -1,4 +1,4 @@
-package homwork2and3;
+package hwk2and3;
 
 import java.util.Arrays;
 
@@ -62,7 +62,7 @@ public class homework3 {
 
         mel.favorites();
         System.out.println(mel.name+ " currently has: " + Arrays.toString(mel.currentMakeup));
-        
+
 
     }
 }

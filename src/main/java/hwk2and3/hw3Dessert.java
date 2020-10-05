@@ -1,4 +1,4 @@
-package homwork2and3;
+package hwk2and3;
 
 public class hw3Dessert {
     public String flavor;

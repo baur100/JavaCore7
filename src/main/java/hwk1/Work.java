@@ -1,4 +1,4 @@
-package homework1;
+package hwk1;
 
 public class Work {
 

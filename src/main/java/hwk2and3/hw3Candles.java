@@ -1,6 +1,4 @@
-package homwork2and3;
-
-import java.security.PublicKey;
+package hwk2and3;
 
 public class hw3Candles {
     public String name;
