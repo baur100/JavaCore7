@@ -6,7 +6,6 @@ public class Dog {
     public int age;
     public String color;
 
-
     public void summonDog() {
     System.out.println("Hey, " + name + "!");
     }
