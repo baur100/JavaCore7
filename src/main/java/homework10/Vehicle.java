@@ -53,7 +53,7 @@ public class Vehicle {
         System.out.println("That is a " + model + ".");
     }
 
-    public String pullVehicleInto(){
+    public String pullVehicleInfo(){
         return year + " " + brand + " " + model
                 + " has " + mpg + " MPG rating.";
     }
