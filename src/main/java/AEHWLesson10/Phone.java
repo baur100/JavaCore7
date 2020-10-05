@@ -10,10 +10,11 @@ public class Phone {
 
         public Phone(){}
 
-        public Phone(String brand, String os, int osVersion) {
+        public Phone(String brand, String os, int osVersion, String[] apps) {
             this.brand = brand;
             this.os = os;
             this.osVersion = osVersion;
+            this.apps = apps;
         }
 
         public void somePhone(){
@@ -40,5 +41,13 @@ public class Phone {
             System.out.println(brand + " has " + Arrays.toString(apps));
         }
 
+    @Override
+    public String toString() {
+        return "Phone: " +
+                "\nbrand= " + brand +
+                "\nos= " + os +
+                "\nosVersion= " + osVersion +
+                "\napps= " + Arrays.toString(apps);
     }
+}
 

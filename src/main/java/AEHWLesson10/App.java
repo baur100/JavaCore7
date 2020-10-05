@@ -22,7 +22,9 @@ public class App {
 
         System.out.println("==========================");
 
-        Phone phone1 = new Phone("Pixel","Android", 11);
+        String[] zzz = {"Facetime", "iMessage", "Facebook"};
+
+        Phone phone1 = new Phone("Pixel","Android", 11, zzz);
         phone1.somePhone();
 
 
@@ -31,6 +33,9 @@ public class App {
         phone2.setApps(new String[]{"Facetime", "iMessage", "Facebook"});
 
         phone2.appsOnPhone();
+
+        Phone phone3 = new Phone("iPhone", "iOS", 14, zzz);
+        System.out.println(phone3.toString());
 
         System.out.println("==========================");
 
