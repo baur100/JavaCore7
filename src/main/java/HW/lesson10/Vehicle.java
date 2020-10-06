@@ -39,6 +39,6 @@ public class Vehicle {
 
 
     public String getVehicleInfo() {
-        return " General info about the vehicle: \nMade in: " + this.madeIn + "\n usage: "+ this.usage + " \ncolor: " + this.color;
+        return " General info about the vehicle: \nMade in: " + this.madeIn + "\nusage: "+ this.usage + " \ncolor: " + this.color;
     }
 }

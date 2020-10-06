@@ -41,6 +41,6 @@ public class Car extends Vehicle {
 
     @Override
     public String getVehicleInfo() {
-        return super.getVehicleInfo() + "\n model: " + this.model + "\ncountry: " + this.country + "\nprice" + this.price;
+        return super.getVehicleInfo() + "\nmodel: " + this.model + "\ncountry: " + this.country + "\nprice: $" + this.price;
     }
 }

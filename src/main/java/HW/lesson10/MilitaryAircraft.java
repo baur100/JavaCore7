@@ -5,7 +5,7 @@ public class MilitaryAircraft extends Aircraft {
     private int numberOfCrew;
     private boolean bombardierAircraft;
 
-    public MilitaryAircraft(String madeIn, String usage, String color, String averageSpeed, boolean militaryAircraft, int distance, String typeOfWeapon, int numberOfCrew, boolean bombardierAircraft) {
+    public MilitaryAircraft(String madeIn, String usage, String color, int averageSpeed, boolean militaryAircraft, int distance, String typeOfWeapon, int numberOfCrew, boolean bombardierAircraft) {
         super(madeIn, usage, color, averageSpeed, militaryAircraft, distance);
         this.typeOfWeapon = typeOfWeapon;
         this.numberOfCrew = numberOfCrew;
