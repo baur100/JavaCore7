@@ -13,9 +13,7 @@ public class Computer {
         this.monitors = monitors;
     }
 
-    public SystemBlock getSystemBlock() {
-        return systemBlock;
-    }
+    public SystemBlock getSystemBlock() { return systemBlock; }
 
     public Keyboard getKeyboard() {
         return keyboard;
@@ -29,6 +27,6 @@ public class Computer {
         return monitors;
     }
     public void printComputer(){
-        System.out.println();
+
     }
 }
