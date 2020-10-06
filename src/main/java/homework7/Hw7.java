@@ -1,6 +1,6 @@
 package homework7;
 
-public class hw7 {
+public class Hw7 {
     public static void main(String[] args){
        sum(10,2);
        sum(5,3);

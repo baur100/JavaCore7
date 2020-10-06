@@ -1,7 +1,7 @@
 package HW9;
 
 
-public class app {
+public class App {
     public static void main(String[] args) {
         String[] xx = {"xx"};
         String[] judySubjects = {"Math","History","Biology","Band","English"};

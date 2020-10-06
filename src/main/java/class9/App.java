@@ -1,6 +1,6 @@
 package class9;
 
-public class app {
+public class App {
     public static void main(String[] args){
         Person1 peter = new Person1();
         peter.lastName = "Dole";

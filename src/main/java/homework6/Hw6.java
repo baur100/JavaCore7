@@ -1,4 +1,4 @@
 package homework6;
 
-public class hw6 {
+public class Hw6 {
 }

@@ -1,6 +1,6 @@
 package class9;
 
-public class app1 {
+public class App1 {
     public static void main(String[] args){
         Vehicle myCar = new Vehicle();
 
