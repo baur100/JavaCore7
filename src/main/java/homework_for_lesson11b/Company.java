@@ -2,6 +2,9 @@ package homework_for_lesson11b;
 
 public class Company {
     public static void main(String[] args) {
+        Person kate = new Person("Kate","Ivanov","Electrician",6);
+        Person nick = new  Person("Nick","Peterson","Mechanic",11);
+
         Employee paul = new Employee ( "Paul","Russ","Analyst",3,247,"supervisor");
         Employee jane = new Employee("Jane","Brook","Counseoar",8,492,"senior advisor");
 
