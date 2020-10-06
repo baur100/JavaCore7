@@ -5,6 +5,14 @@ public class Bed {
     private String size;
     private int height;
 
+    public Bed (String name ){
+
+    }
+
+    public Bed() {
+
+    }
+
     public void setName(String name) {
         this.name = name;
     }

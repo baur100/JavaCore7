@@ -1,5 +1,7 @@
 package Homework4;
 
+import javax.xml.namespace.QName;
+
 public class Watch_object {
     public static void main(String[] args) {
 
@@ -9,10 +11,16 @@ public class Watch_object {
         watch.setColor("Gold");
         watch.setPrice(700);
 
+        Watch myWatch = new Watch();
+
         String name = watch.getName();
         String brand = watch.getBrand();
         String color = watch.getColor();
         int price = watch.getPrice();
+
+        Watch newWatch = new Watch();
+        String newWatchName = newWatch.getName();
+        newWatch.setName("AppleWatch6");
 
 
         System.out.println("New" + " " + name + " " +
