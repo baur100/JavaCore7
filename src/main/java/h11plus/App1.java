@@ -1,8 +1,5 @@
 package h11plus;
 
-import lesson11b.Address;
-import lesson11b.Person;
-import org.w3c.dom.ls.LSOutput;
 
 public class App1 {
     public static void main(String[] args) {
