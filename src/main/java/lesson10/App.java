@@ -2,12 +2,12 @@ package lesson10;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Person evan = new Person();
-        evan.setName("Evan");
-        evan.setName("Eevan");
-
-        String name = evan.getName();
-        evan.setYear(1995);
+//        Person evan = new Person();
+//        evan.setName("Evan");
+//        evan.setName("Eevan");
+//
+//        String name = evan.getName();
+//        evan.setYear(1995);
 
         Vehicle myMazda = new Vehicle();
         myMazda.setBrand("Mazda");
