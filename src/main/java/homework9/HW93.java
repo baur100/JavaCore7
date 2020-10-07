@@ -2,12 +2,12 @@ package homework9;
 
 public class HW93 {
     public static void main(String[] args) {
-        Furniture bad = new Furniture();
-        bad.name = "bad";
-        bad.store = "Costco";
-        bad.color = "mahogony";
-        bad.theCountryOfManufacture = "Italy";
-        bad.price = 899;
+        Furniture bed = new Furniture();
+        bed.name = "bad";
+        bed.store = "Costco";
+        bed.color = "mahogony";
+        bed.theCountryOfManufacture = "Italy";
+        bed.price = 899;
 
         Furniture desk = new Furniture();
         desk.name = "desk";
@@ -16,10 +16,10 @@ public class HW93 {
         desk.theCountryOfManufacture = "China";
         desk.price = 150;
 
-        bad.ad();
+        bed.ad();
         desk.ad();
 
-        String badItem = bad.item();
+        String badItem = bed.item();
         System.out.println(badItem);
 
         String deskItem = desk.item();
