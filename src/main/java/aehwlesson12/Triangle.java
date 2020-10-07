@@ -13,8 +13,7 @@ public class Triangle implements Perimeter{
 
     @Override
     public int perimeter() {
-        int p = sideA + sideB + base;
-        return p;
+        return sideA + sideB + base;
     }
 }
 

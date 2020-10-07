@@ -11,7 +11,6 @@ public class Rectangle implements Perimeter{
 
     @Override
     public int perimeter() {
-        int p = 2 * (length + width);
-        return p;
+        return 2 * (length + width);
     }
 }
