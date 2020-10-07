@@ -9,10 +9,10 @@ public class notesOOP {
         //new objectstructure / initialization -> className = new className();
         //create a real obj just initialize it-> className = new className();
         //functions & methods start with minusculas
-        ex: class person(
-                sting int year; -> filed
-
-                public static drive(){} -> method
+//        ex: class person(
+//                sting int year; -> filed
+//
+//                public static drive(){} -> method
 
 
         // giving an action
@@ -30,7 +30,7 @@ public class notesOOP {
         // class-uppercase (string included)
         //functions-lowercase
         //
-        )
+
     }
     public class person{}
 }

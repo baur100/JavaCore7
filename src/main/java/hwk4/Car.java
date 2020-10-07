@@ -30,12 +30,12 @@ public class Car {
         this.model = model;
     }
 
-    public int getSpeed(){
+    public int getYear(){
         return year;
     }
 
-    public void setSpeed(int speed){
-        this.year = speed;
+    public void setYear(int year){
+        this.year = year;
     }
 
     public void printCarInfo(){

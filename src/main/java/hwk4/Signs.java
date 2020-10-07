@@ -38,6 +38,6 @@ public class Signs {
     }
 
     public void printSignInfo(){
-        System.out.println("The traffic sign I am lookign at is: " + color + "with a drawing of " +drawing+ "\n Its meaning is: " + direction);
+        System.out.println("The traffic sign I am lookign at is: " + color + " with a drawing of " +drawing+ "\n Its meaning is: " + direction);
     }
 }

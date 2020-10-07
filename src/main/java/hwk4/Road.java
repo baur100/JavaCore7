@@ -38,6 +38,6 @@ public class Road {
     }
 
     public void printRoadInfo(){
-        System.out.println("You are currently in road: " + name + " " + referenceNumber+ "in "+ state + " state");
+        System.out.println("You are currently in road: " + name + " " + referenceNumber+ " in "+ state + " state");
     }
 }
