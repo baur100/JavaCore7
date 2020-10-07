@@ -18,4 +18,10 @@ public class Player extends Headset{
     public void setSize(String size) {
         this.size = size;
     }
+
+    public void printPlayer() {
+        System.out.println("Player" + "\nName:" + name +
+                "\nMake:" + make +
+                "\nModel:" + model + "\n==============");
+    }
 }

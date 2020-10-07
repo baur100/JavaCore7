@@ -1,25 +1,30 @@
 package Lesson_11_Homework;
 
-public class Laptop extends Headset{
+public class Laptop extends Headset {
 
-    private String binary;
+    private String[] laptopBinary;
 
-    public Laptop(String name, String make, String model, String binary) {
+    public Laptop(String name, String make, String model, String[] laptopBinary) {
         super(name, make, model);
-        this.binary = binary;
+        this.laptopBinary = laptopBinary;
     }
 
     public Laptop() {
+
     }
 
-    public Laptop(String laptop, String asus, String vivoBook, String[] laptopBinary) {
+    public String[] getLaptopBinary() {
+        return laptopBinary;
     }
 
-    public String getBinary() {
-        return binary;
+    public void setLaptopBinary(String[] laptopBinary) {
+        this.laptopBinary = laptopBinary;
     }
 
-    public void setBinary(String binary) {
-        this.binary = binary;
+    public void printLaptop() {
+        System.out.println("Laptop" + "\nName:" + name +
+                "\nMake:" + make +
+                "\nModel:" + model + "\n==============");
     }
 }
+

@@ -5,16 +5,13 @@ public class Headset {
     protected String make;
     protected String model;
 
-    public Headset(String name, String make, String model, String binary) {
+    public Headset(String name, String make, String model) {
         this.name = name;
         this.make = make;
         this.model = model;
     }
 
     public Headset() {
-    }
-
-    public Headset(String name, String make, String model) {
     }
 
     public String getName() {
@@ -39,5 +36,12 @@ public class Headset {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+
+    public void printHeadset() {
+        System.out.println("Headset" + "\nName:" + name +
+                "\nMake:" + make +
+                "\nModel:" + model+"\n==============");
     }
 }

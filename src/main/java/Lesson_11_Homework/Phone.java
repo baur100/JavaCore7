@@ -1,21 +1,27 @@
 package Lesson_11_Homework;
 
 public class Phone extends Headset{
-    private String binary;
+    private String[] phoneBinary;
 
-    public Phone(String name, String make, String model, String binary) {
+    public Phone(String name, String make, String model, String[] phoneBinary) {
         super(name, make, model);
-        this.binary = binary;
+        this.phoneBinary = phoneBinary;
     }
 
-    public Phone(String iPhone, String apple, String x, String[] phoneBinary) {
+    public Phone(String[] phoneBinary) {
+        this.phoneBinary = phoneBinary;
     }
 
-    public String getBinary() {
-        return binary;
+    public String[] getPhoneBinary() {
+        return phoneBinary;
     }
 
-    public void setBinary(String binary) {
-        this.binary = binary;
+    public void setPhoneBinary(String[] phoneBinary) {
+        this.phoneBinary = phoneBinary;
+    }
+    public void printHPhone() {
+        System.out.println("Phone}" + "\nName:" + name +
+                "\nMake:" + make +
+                "\nModel:" + model + "\n==============");
     }
 }
