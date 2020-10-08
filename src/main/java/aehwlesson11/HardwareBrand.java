@@ -14,4 +14,10 @@ public class HardwareBrand {
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    @Override
+    public String toString() {
+        return "HardwareBrand:" +
+                "brand= " + brand;
+    }
 }

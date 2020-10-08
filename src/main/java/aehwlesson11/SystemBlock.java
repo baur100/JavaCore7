@@ -17,4 +17,10 @@ public class SystemBlock {
     public void setProcessor(String processor) {
         this.processor = processor;
     }
+
+    @Override
+    public String toString() {
+        return "SystemBlock: " +
+                "processor = " + processor;
+    }
 }

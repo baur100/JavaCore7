@@ -27,4 +27,12 @@ public class Mouse extends HardwareBrand{
     public void setMouseWireless(boolean mouseWireless) {
         isMouseWireless = mouseWireless;
     }
+
+    @Override
+    public String toString() {
+        return "Mouse: " +
+                "mouseModel= " + mouseModel +
+                ", isMouseWireless= " + isMouseWireless +
+                ", brand= " + brand;
+    }
 }

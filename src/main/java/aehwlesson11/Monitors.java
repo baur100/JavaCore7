@@ -1,5 +1,7 @@
 package aehwlesson11;
 
+import java.util.Arrays;
+
 public class Monitors extends HardwareBrand{
     protected String[] monitorsModel;
 
@@ -8,16 +10,19 @@ public class Monitors extends HardwareBrand{
         this.monitorsModel = monitorsModel;
     }
 
-    public Monitors(String brand) {
-        super(brand);
-    }
-
     public void setMonitorsModel(String[] monitorsModel) {
         this.monitorsModel = monitorsModel;
     }
 
     public String[] getMonitorsModel() {
         return monitorsModel;
+    }
+
+    @Override
+    public String toString() {
+        return "Monitors: " +
+                "monitorsModel= " + Arrays.toString(monitorsModel) +
+                ", brand= " + brand;
     }
 }
 

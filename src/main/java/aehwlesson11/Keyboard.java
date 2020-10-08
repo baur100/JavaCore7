@@ -26,4 +26,11 @@ public class Keyboard extends HardwareBrand {
         isKeyboardWireless = keyboardWireless;
     }
 
+    @Override
+    public String toString() {
+        return "Keyboard: " +
+                "keyboardModel= " + keyboardModel +
+                ", isKeyboardWireless= " + isKeyboardWireless +
+                ", brand= " + brand;
+    }
 }

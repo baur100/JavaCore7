@@ -44,4 +44,13 @@ public class Computer {
     public void setMonitors(Monitors monitor) {
         this.monitors = monitor;
     }
+
+    @Override
+    public String toString() {
+        return "Computer:" +
+                "\n" + processor +
+                "\n" + keyboard +
+                "\n" + mouse +
+                "\n" + monitors;
+    }
 }

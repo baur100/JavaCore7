@@ -21,6 +21,11 @@ public class App {
 
         Computer comp2 = new Computer(processor2, keyboard2, mouse2, monitor2);
 
+        System.out.println(comp1.toString());
+        System.out.println("**************************");
+        System.out.println(comp2.toString());
+
+        System.out.println("==========================");
 
         String comp1Keyboard = comp1.getKeyboard().getBrand();
 
