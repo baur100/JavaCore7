@@ -1,10 +1,10 @@
 package h11plus;
 
-public class Keyboard {
+public class Processor {
     private String brand;
     private String model;
 
-    public Keyboard(String brand, String model) {
+    public Processor(String brand, String model) {
         this.brand = brand;
         this.model = model;
     }
@@ -27,7 +27,7 @@ public class Keyboard {
 
     @Override
     public String toString() {
-        return "Keyboard{" +
+        return "Processor{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 '}';
