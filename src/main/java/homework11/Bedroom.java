@@ -11,4 +11,8 @@ public class Bedroom extends Room{
     public int getSleepNumber() {
         return sleepNumber;
     }
+
+    public String getDescription() {
+        return "Bedroom:"+" area_sq_m:"+area_sq_m+" color: "+color+" windows:"+windows+" sleep:"+sleepNumber+"\n**************";
+    }
 }

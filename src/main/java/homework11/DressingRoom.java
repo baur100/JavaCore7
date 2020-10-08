@@ -11,4 +11,7 @@ public class DressingRoom extends Room {
     public int getShelvesNumber() {
         return shelvesNumber;
     }
+    public String getDescription() {
+        return "Dressingroom:" + " area_sq_m:" + area_sq_m + " color: " + color + " windows:" + windows + " shelves:" + shelvesNumber + "\n**************";
+    }
 }

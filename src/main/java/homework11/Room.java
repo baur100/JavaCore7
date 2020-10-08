@@ -23,4 +23,7 @@ public class Room {
         this.color = color;
         this.windows = windows;
     }
+    public String getDescription() {
+        return "Room:" + " area_sq_m:" + area_sq_m + " color: " + color + " windows:" + windows + "\n**************";
+    }
 }
