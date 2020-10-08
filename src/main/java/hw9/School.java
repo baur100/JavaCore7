@@ -1,4 +1,4 @@
-package HW9;
+package hw9;
 
 public class School {
         public String fname;

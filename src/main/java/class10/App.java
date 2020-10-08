@@ -1,4 +1,4 @@
-package Class10;
+package class10;
 
 public class App {
     public static void main(String[] args) throws Exception {
