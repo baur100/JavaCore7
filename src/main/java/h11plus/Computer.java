@@ -1,53 +1,59 @@
 package h11plus;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class Computer {
-    private SystemBlock processor;
+    private SystemBlock systemBlock;
     private Keyboard keyboard;
     private Mouse mouse;
     private Monitor[] monitors;
 
-    public Computer(SystemBlock processor, Keyboard keyboard, Mouse mouse, Monitor[] monitors) {
-        this.processor = processor;
+    public Computer(SystemBlock systemBlock, Keyboard keyboard, Mouse mouse, Monitor[] monitors) {
+        this.systemBlock = systemBlock;
         this.keyboard = keyboard;
         this.mouse = mouse;
         this.monitors = monitors;
     }
 
-    public SystemBlock getProcessor() {
-        return processor;
+    public SystemBlock getSystemBlock() {
+        return systemBlock;
+    }
+
+    public void setSystemBlock(SystemBlock systemBlock) {
+        this.systemBlock = systemBlock;
     }
 
     public Keyboard getKeyboard() {
         return keyboard;
     }
 
+    public void setKeyboard(Keyboard keyboard) {
+        this.keyboard = keyboard;
+    }
+
     public Mouse getMouse() {
         return mouse;
+    }
+
+    public void setMouse(Mouse mouse) {
+        this.mouse = mouse;
     }
 
     public Monitor[] getMonitors() {
         return monitors;
     }
-    public String getDescription() {
-        return "Our computer has:\n" +
-                processor.getDescription() + "\n" +
-                keyboard.getDescription() + "\n" +
-                describeAllMonitors() + "\n" +
-                mouse.getDescription() + "\n";
+
+    public void setMonitors(Monitor[] monitors) {
+        this.monitors = monitors;
     }
 
-    private String describeAllMonitors() {
-        String result = "";
-        for (int i = 0; i < monitors.length; i++){
-            if (i>0 ) {
-                result = result + "\n";
-            }
-            result = result + monitors[i].getDescription();
-        }
-        return result;
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "systemBlock=" + systemBlock +
+                ", keyboard=" + keyboard +
+                ", mouse=" + mouse +
+                ", monitors=" + Arrays.toString(monitors) +
+                '}';
     }
 }
-
