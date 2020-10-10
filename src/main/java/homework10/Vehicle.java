@@ -41,7 +41,7 @@ public class Vehicle {
         this.year = year;
     }
 
-    public double getMpg(double mpg){
+    public double getMpg(){
         return mpg;
     }
 
