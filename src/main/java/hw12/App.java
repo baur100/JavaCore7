@@ -8,5 +8,11 @@ public class App {
         WashingMachine Samsung = new WashingMachine("Samsung", "Super", 750);
         Dryer Bosch = new Dryer("Bosch", "300 Series", 989);
         Dryer Whirpool = new Dryer("Whirpool", "7.0 Cu ft", 599);
+
+        GE.keepingSizeAndStandard();
+        Samsung.keepingSizeAndStandard();
+        Bosch.keepingSizeAndStandard();
+        Whirpool.keepingSizeAndStandard();
     }
+
 }

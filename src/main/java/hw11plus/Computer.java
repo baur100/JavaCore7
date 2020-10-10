@@ -1,30 +1,26 @@
-package h11plus;
+package hw11plus;
+
+import java.util.Arrays;
 
 public class Computer {
-    private String onecomputer;
-    private String onelaptop;
-    private SystemBlock processor;
+    private SystemBlock systemBlock;
     private Keyboard keyboard;
     private Mouse mouse;
     private Monitor[] monitors;
 
-    public Computer(SystemBlock processor, Keyboard keyboard, Mouse mouse, Monitor[] monitors) {
-        this.processor = processor;
+    public Computer(SystemBlock systemBlock, Keyboard keyboard, Mouse mouse, Monitor[] monitors) {
+        this.systemBlock = systemBlock;
         this.keyboard = keyboard;
         this.mouse = mouse;
         this.monitors = monitors;
     }
 
-    public Computer() {
+    public SystemBlock getSystemBlock() {
+        return systemBlock;
     }
 
-
-    public SystemBlock getProcessor() {
-        return processor;
-    }
-
-    public void setProcessor(SystemBlock processor) {
-        this.processor = processor;
+    public void setSystemBlock(SystemBlock systemBlock) {
+        this.systemBlock = systemBlock;
     }
 
     public Keyboard getKeyboard() {
@@ -49,5 +45,15 @@ public class Computer {
 
     public void setMonitors(Monitor[] monitors) {
         this.monitors = monitors;
+    }
+
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "systemBlock=" + systemBlock +
+                ", keyboard=" + keyboard +
+                ", mouse=" + mouse +
+                ", monitors=" + Arrays.toString(monitors) +
+                '}';
     }
 }

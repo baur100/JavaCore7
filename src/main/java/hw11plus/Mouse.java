@@ -1,4 +1,4 @@
-package h11plus;
+package hw11plus;
 
 public class Mouse {
     private String model;
@@ -35,8 +35,14 @@ public class Mouse {
         isWireless = wireless;
     }
 
-    //    Scroll Mouse
-//            Cordless Mouse
-//                    Optical Mouse
+    @Override
+    public String toString() {
+        return "Mouse{" +
+                "model='" + model + '\'' +
+                ", brand='" + brand + '\'' +
+                ", isWireless=" + isWireless +
+                '}';
+    }
+
 
 }

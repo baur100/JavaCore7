@@ -1,4 +1,4 @@
-package h11plus;
+package hw11plus;
 
 public class Keyboard {
     private String kmodel;
@@ -36,5 +36,14 @@ public class Keyboard {
 
     public void setKisWireless(boolean kisWireless) {
         this.kisWireless = kisWireless;
+    }
+
+    @Override
+    public String toString() {
+        return "Keyboard{" +
+                "kmodel='" + kmodel + '\'' +
+                ", kbrand='" + kbrand + '\'' +
+                ", kisWireless=" + kisWireless +
+                '}';
     }
 }
