@@ -16,7 +16,7 @@ public class App {
 
         Computer dellInsperion = new Computer(systemBlock,keyboard,mouse, new Monitor[] {monitor});
 
-//        System.out.println(dellInsperion);
-        System.out.println(disk);
+       System.out.println(dellInsperion);
+        //System.out.println(disk);
     }
 }
