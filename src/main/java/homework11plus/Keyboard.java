@@ -1,7 +1,5 @@
 package homework11plus;
 
-import java.security.Key;
-
 public class Keyboard {
     private String brand;
     private String model;
