@@ -38,4 +38,8 @@ public class Processor {
     public void setSpeed(double speed){
         this.speed = speed;
     }
+
+    public String pullProcessorInfo(){
+        return "Processor: " + brand + " " + model + " " + speed + "Ghz\r\n";
+    }
 }

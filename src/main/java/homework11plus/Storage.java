@@ -48,4 +48,8 @@ public class Storage {
     public void setDiskType(String diskType) {
         this.diskType = diskType;
     }
+
+    public String pullStorageInfo(){
+        return "Storage: " + brand + " " + model + " " + size + "TB\r\n";
+    }
 }

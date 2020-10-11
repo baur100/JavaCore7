@@ -48,4 +48,9 @@ public class Keyboard {
     public void setBoardType(String boardType) {
         this.boardType = boardType;
     }
+
+    public String pullKeyboardInfo(){
+        return "Keyboard: " + brand + " " + model
+                + " " + connectionType + " " + boardType + "\r\n";
+    }
 }

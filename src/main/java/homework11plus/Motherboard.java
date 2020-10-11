@@ -5,14 +5,14 @@ public class Motherboard {
     private String model;
     private String socket;
 
+    public Motherboard(){
+
+    }
+
     public Motherboard(String brand, String model, String socket) {
         this.brand = brand;
         this.model = model;
         this.socket = socket;
-    }
-
-    public Motherboard(){
-
     }
 
     public String getBrand() {
@@ -37,5 +37,9 @@ public class Motherboard {
 
     public void setSocket(String socket) {
         this.socket = socket;
+    }
+
+    public String pullMotherboardInfo() {
+        return "Motherboard: " + brand + " " + model + " socket " + socket + "\r\n";
     }
 }

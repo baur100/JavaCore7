@@ -38,4 +38,8 @@ public class Mouse {
     public void setConnectionType(String connectionType) {
         this.connectionType = connectionType;
     }
+
+    public String pullMouseInfo(){
+        return "Mouse: " + brand + " " + model + " " + connectionType + "\r\n";
+    }
 }

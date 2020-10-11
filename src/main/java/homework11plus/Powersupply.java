@@ -38,4 +38,8 @@ public class Powersupply {
     public void setWatts(int watts) {
         this.watts = watts;
     }
+
+    public String pullPowersupplyInfo(){
+        return "Power supply: " + brand + " " + model + " " + watts + "W\r\n";
+    }
 }

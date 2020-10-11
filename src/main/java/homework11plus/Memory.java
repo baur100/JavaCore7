@@ -39,5 +39,9 @@ public class Memory {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+    public String pullMemoryInfo(){
+        return "Memory: " + brand + " " + size + "GB " + speed + "MHz\r\n";
+    }
 }
 

@@ -1,13 +1,13 @@
 package homework11plus;
 
-public class System {
+public class SystemBlock {
     private Motherboard motherboard;
     private Processor processor;
     private Storage storage;
     private Memory memory;
     private Powersupply powersupply;
 
-    public System(Motherboard motherboard, Processor processor, Storage storage, Memory memory, Powersupply powersupply) {
+    public SystemBlock(Motherboard motherboard, Processor processor, Storage storage, Memory memory, Powersupply powersupply) {
         this.motherboard = motherboard;
         this.processor = processor;
         this.storage = storage;
@@ -15,7 +15,7 @@ public class System {
         this.powersupply = powersupply;
     }
 
-    public System(){
+    public SystemBlock(){
 
     }
 
@@ -57,5 +57,10 @@ public class System {
 
     public void setPowersupply(Powersupply powersupply) {
         this.powersupply = powersupply;
+    }
+
+    public String pullSystemBlockInfo(){
+        return motherboard.pullMotherboardInfo() + processor.pullProcessorInfo() + memory.pullMemoryInfo()
+                + storage.pullStorageInfo() + powersupply.pullPowersupplyInfo();
     }
 }

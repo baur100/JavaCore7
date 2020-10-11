@@ -1,13 +1,13 @@
 package homework11plus;
 
 public class Computer {
-    private Motherboard motherboard;
+    private SystemBlock system;
     private Keyboard keyboard;
     private Mouse mouse;
     private Monitor monitor;
 
-    public Computer(Motherboard motherboard, Keyboard keyboard, Mouse mouse, Monitor monitor) {
-        this.motherboard = motherboard;
+    public Computer(SystemBlock system, Keyboard keyboard, Mouse mouse, Monitor monitor) {
+        this.system = system;
         this.keyboard = keyboard;
         this.mouse = mouse;
         this.monitor = monitor;
@@ -17,12 +17,12 @@ public class Computer {
 
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
+    public SystemBlock getSystem() {
+        return system;
     }
 
-    public void setMotherboard(Motherboard motherboard) {
-        this.motherboard = motherboard;
+    public void setSystem(SystemBlock system) {
+        this.system = system;
     }
 
     public Keyboard getKeyboard() {
@@ -47,5 +47,10 @@ public class Computer {
 
     public void setMonitor(Monitor monitor) {
         this.monitor = monitor;
+    }
+
+    public String pullComputerInfo (){
+        return system.pullSystemBlockInfo() + keyboard.pullKeyboardInfo()
+                + mouse.pullMouseInfo() + monitor.pullMonitorInfo();
     }
 }
