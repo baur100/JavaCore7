@@ -6,10 +6,17 @@ public class homework11 {
             //Interface created= dessert
             //2classes= Cake & IceCream
         //Create 2 objects of each class
+        String[] cakeFillings = {"Strawberries", "Rash Berries", "Blue Berries", "Marmelade"};
+        String[] bestCakeFillings = {"Strawberries", "Creme"};
 
-        Dessert myNewCake = new Cake( String "chocolate",String "two", new String[]{"starwberries", "Bananan"});
-        Dessert myBestCake = new Cake(String "vanilla", String "three", new String[]{"strawberries"})
+        Dessert myNewCake = new Cake("chocolate","two", cakeFillings);
+        Dessert myBestCake = new Cake("vanilla","three", bestCakeFillings);
+
+        myNewCake.getDessert();
+        myBestCake.getDessert();
         //Assign one object to interface type
+
+
 
 
 

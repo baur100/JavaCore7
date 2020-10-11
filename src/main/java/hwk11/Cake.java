@@ -1,18 +1,20 @@
 package hwk11;
 
+import java.util.Arrays;
+
 public class Cake implements Dessert{
     private String cake;
     private String layers;
-    private String filling;
+    private String[] fillings;
 
     public Cake (String cake,  String layers, String[] fillings){
         this.cake = cake;
         this.layers = layers;
-        this.filling = filling;
+        this.fillings = fillings;
     }
 
     public void getDessert(){
         System.out.println("My dessert is: "+ cake + " with layers made of " +layers
-    + " " + filling+ " fillings!");
+    + " " + Arrays.toString(fillings)+ " fillings!");
     }
 }
