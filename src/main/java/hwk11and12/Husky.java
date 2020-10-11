@@ -1,4 +1,4 @@
-package hwk11;
+package hwk11and12;
 
 public class Husky extends Dog{
     private String doubleCoatedHairColor;

@@ -1,4 +1,4 @@
-package hwk11;
+package hwk11and12;
 
 import java.util.Arrays;
 

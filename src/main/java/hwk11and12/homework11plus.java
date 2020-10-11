@@ -1,6 +1,4 @@
-package hwk11;
-
-import java.util.Arrays;
+package hwk11and12;
 
 public class homework11plus {
     public static void main(String[] args) {
