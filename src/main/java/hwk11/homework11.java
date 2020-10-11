@@ -6,6 +6,9 @@ public class homework11 {
             //Interface created= dessert
             //2classes= Cake & IceCream
         //Create 2 objects of each class
+        //Assign one object to interface type
+
+        //First class
         String[] cakeFillings = {"Strawberries", "Rash Berries", "Blue Berries", "Marmelade"};
         String[] bestCakeFillings = {"Strawberries", "Creme"};
 
@@ -14,12 +17,15 @@ public class homework11 {
 
         myNewCake.getDessert();
         myBestCake.getDessert();
-        //Assign one object to interface type
 
+        //second class
+        String[] sorbetIngredients = {"Fresh Strawberries", "Mango Slices", "Passion Fruit Juice"};
+        String[] gellatoIngredients = {"Creme", "Chocolate", "Dark Chocolate Chips"};
 
-
-
-
+        Dessert fruitySorbet = new IceCream("Fruity Island Sorbet", sorbetIngredients);
+        Dessert cremeChocolateGellato = new IceCream("Chocolate Gellato", gellatoIngredients);
+        fruitySorbet.getDessert();
+        cremeChocolateGellato.getDessert();
     }
 }
 
