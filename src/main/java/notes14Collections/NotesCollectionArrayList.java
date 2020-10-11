@@ -1,6 +1,8 @@
 package notes14Collections;
 
 public class NotesCollectionArrayList {
+//https://youtu.be/nABsL64o9ys
+
 
     //advanced arrays idea is the same
     //1. array list(App.lesson 14)- can add or remove values. can change size()

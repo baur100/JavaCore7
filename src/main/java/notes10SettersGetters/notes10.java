@@ -1,7 +1,8 @@
-package notes10;
+package notes10SettersGetters;
 
 public class notes10 {
-    //VIDEO: https://www.youtube.com/watch?v=4BnhCw18eCA&feature=youtu.be
+//https://youtu.be/4BnhCw18eCA
+
     public static void main(String[] args) {
         //encapsulation- all properties of class are invisible to outside aka private
         //person 10 is private so now make all files now private with get adn set

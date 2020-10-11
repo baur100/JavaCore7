@@ -1,6 +1,8 @@
-package notes13;
+package notes13Enums;
 
 public class notes13 {
+//https://youtu.be/rBsuEPlEubE
+
     //enum - java class-
     // no " " needed
     //enum vs string

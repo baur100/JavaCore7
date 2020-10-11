@@ -1,4 +1,4 @@
-package notes10;
+package notes10SettersGetters;
 
 public class person10 {
         private String name;
