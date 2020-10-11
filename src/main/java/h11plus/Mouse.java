@@ -20,10 +20,14 @@ public class Mouse {
     }
 
     public boolean isWireless() {
-        return isWireless;
-    }
+        return isWireless; }
 
-    public void printMouse() {
-        System.out.println(model + brand + isWireless);
+    @Override
+    public String toString() {
+        return "\n************" +
+                "\nMouse: " +
+                "\nmodel= " + model +
+                "\nbrand= " + brand  +
+                "\nisWireless= " + isWireless;
     }
 }

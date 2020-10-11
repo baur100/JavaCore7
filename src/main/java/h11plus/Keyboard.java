@@ -20,9 +20,14 @@ public class Keyboard {
     }
 
     public String getModel() {
-        return model;
-    }
-    public void printKeyboard(){
-        System.out.println(model+brand+isWireless);
+        return model; }
+
+    @Override
+    public String toString() {
+        return "\n************" +
+                "\nKeyboard: " +
+                "\nisWireless= " + isWireless +
+                "\nbrand= " + brand+
+                "\nmodel= " + model;
     }
 }

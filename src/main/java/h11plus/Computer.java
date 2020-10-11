@@ -1,5 +1,7 @@
 package h11plus;
 
+import java.util.Arrays;
+
 public class Computer {
     private SystemBlock systemBlock;
     private Keyboard keyboard;
@@ -13,7 +15,9 @@ public class Computer {
         this.monitors = monitors;
     }
 
-    public SystemBlock getSystemBlock() { return systemBlock; }
+    public SystemBlock getSystemBlock() {
+        return systemBlock;
+    }
 
     public Keyboard getKeyboard() {
         return keyboard;
@@ -26,7 +30,17 @@ public class Computer {
     public Monitor[] getMonitors() {
         return monitors;
     }
-    public void printComputer(){
 
+    @Override
+    public String toString() {
+        return "\nComputer:" +
+                systemBlock +
+                keyboard +
+                mouse +
+                Arrays.toString(monitors);
     }
 }
+
+
+
+

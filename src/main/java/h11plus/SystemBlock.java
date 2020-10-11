@@ -35,7 +35,14 @@ public class SystemBlock {
         return videocard;
     }
 
-    public void printKeyboard() {
-        System.out.println(motherboard + processor + hdd + memory + videocard);
+    @Override
+    public String toString() {
+        return "\n************" +
+                "\nSystemBlock: " +
+                "\nmotherboard= " + motherboard  +
+                "\nprocessor= " + processor  +
+                "\nhdd= " + hdd +
+                "\nmemory= " + memory +
+                "\nvideocard=  " + videocard;
     }
 }
