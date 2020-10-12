@@ -1,11 +1,13 @@
 package aehwlesson13;
 
+import java.util.Arrays;
+
 public class Vehicle {
     private CarBrand brand;
-    private CarColor color;
+    private CarColor[] color;
     private CarType type;
 
-    public Vehicle(CarBrand brand, CarColor color, CarType type) {
+    public Vehicle(CarBrand brand, CarColor[] color, CarType type) {
         this.brand = brand;
         this.color = color;
         this.type = type;
@@ -15,7 +17,7 @@ public class Vehicle {
         return brand;
     }
 
-    public CarColor getColor() {
+    public CarColor[] getColor() {
         return color;
     }
 
@@ -26,8 +28,8 @@ public class Vehicle {
     @Override
     public String toString() {
         return "Vehicle: " +
-                "brand = " + brand +
-                ", color = " + color +
-                ", type = " + type;
+                "\nbrand = " + brand +
+                "\ncolor = " + Arrays.toString(color) +
+                "\ntype = " + type;
     }
 }
