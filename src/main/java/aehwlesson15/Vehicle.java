@@ -28,7 +28,7 @@ public class Vehicle {
     @Override
     public String toString() {
         return "My Car: " +
-                "carBrand, " + carBrand +
-                "carColor " + carColor;
+                "brand " + carBrand +
+                ", color " + carColor + " ";
     }
 }
