@@ -6,6 +6,10 @@ public class Countries {
     protected String language;
     protected String religion;
 
+    public Countries(String language, String religion) {
+
+    }
+
 
     public String getName() {
         return name;
