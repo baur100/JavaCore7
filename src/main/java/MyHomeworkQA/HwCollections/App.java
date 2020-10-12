@@ -24,10 +24,10 @@ public class App {
         myInts.add(1562);
 
         // Dogs
-        myKennel.add(new Dog("Rover", "Blue Lacey", true, 1200987));
-        myKennel.add(new Dog("Amish", "Irish Setter", true, 3455006));
-        myKennel.add(new Dog("Velvet", "Labradoodle", false, 1010101));
-        myKennel.add(new Dog("Larry", "Pitbull", true, 1340379));
+        myKennel.add(new Dog("Rover", "Blue Lacey"));
+        myKennel.add(new Dog("Amish", "Irish Setter"));
+        myKennel.add(new Dog("Velvet", "Labradoodle"));
+        myKennel.add(new Dog("Larry", "Pitbull"));
         Dog bixby = new Dog("Bixby","Golden Retriever");
 
         // Working with strings
@@ -59,7 +59,7 @@ public class App {
         System.out.println("");
         myKennel.remove(myKennel.size() - 1);
         myKennel.set(0, bixby);
-        myKennel.add(new Dog("Mister Sir", "German Shepherd", true, 1002399));
+        myKennel.add(new Dog("Mister Sir", "German Shepherd"));
         for (Dog dog : myKennel) {
             System.out.println(dog.info());
         }
