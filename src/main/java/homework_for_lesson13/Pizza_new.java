@@ -1,13 +1,12 @@
 package homework_for_lesson13;
 
-import java.util.Arrays;
+public class Pizza_new {
 
-public class Pizza {
     private String name;
-    private Size size [];
+    private Size size;
     private Type type;
 
-    public Pizza(String name, Size[] size, Type type) {
+    public Pizza_new(String name, Size size, Type type) {
         this.name = name;
         this.size = size;
         this.type = type;
@@ -21,11 +20,11 @@ public class Pizza {
         this.name = name;
     }
 
-    public Size[] getSize() {
+    public Size getSize() {
         return size;
     }
 
-    public void setSize(Size[] size) {
+    public void setSize(Size size) {
         this.size = size;
     }
 
@@ -39,7 +38,8 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "We offer a classical Pizza -" + " "+ name + "," + "all sizes-" + Arrays.toString(size) +
-                ",type-" + type + ".";
+        return "We serve a new Pizza -" + " " + name + ",size -" + " " +size + " "+ ",type -" + type + "."
+        ;
     }
 }
+
