@@ -28,6 +28,6 @@ public class Mouse {
                 "\nMouse: " +
                 "\nmodel= " + model +
                 "\nbrand= " + brand  +
-                "\nisWireless= " + isWireless;
+                "\nWireless= " + isWireless;
     }
 }

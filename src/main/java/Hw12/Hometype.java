@@ -34,4 +34,15 @@ public class Hometype {
     public int getYear() {
         return year;
     }
+
+    @Override
+    public String toString() {
+        return "Hometype{" +
+                "price=" + price +
+                ", sqft=" + sqft +
+                ", bed=" + bed +
+                ", bath=" + bath +
+                ", year=" + year +
+                '}';
+    }
 }
