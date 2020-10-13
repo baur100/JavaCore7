@@ -1,5 +1,7 @@
 package lesson10;
-
+//we only use private in encapsulation. We can get the access to those fields by using
+// setters and getters.
+//
 public class House {
     private int year;
     private int bedrooms;

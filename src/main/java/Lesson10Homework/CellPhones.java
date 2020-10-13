@@ -1,5 +1,5 @@
 package Lesson10Homework;
-//fields and instances are the same thing
+//first to create the fields, ffields and instances are the same thing
 public class CellPhones {
     private String brand;
     private String generation;
@@ -15,7 +15,7 @@ public class CellPhones {
         this.price = price;
         this.memory = memory;
     }
-    public CellPhones() // Default (empty) constructor, we always need this.
+    public CellPhones() // Default (empty) constructor, we always need this. Object is an intance of a class
     {
 
     }

@@ -1,5 +1,7 @@
 package Lesson10Homework;
 
+import lesson9.Vehicle;
+
 public class App {
     public static void main(String[]args){
         //this below is the object of CellPhones Class
@@ -66,6 +68,16 @@ public class App {
         Televisions ourTelevision = new Televisions("Panasonic", "Smart TV", 1600, 75, "4K");
         ourTelevision.printTelevisions();
 
+        System.out.println("\n Here is Vehicle Class ------------------------------------------------");
+
+        Vehicles myVehicles = new Vehicles();
+        myVehicles.setBrand("FORD");
+        myVehicles.setType("Truck");
+        myVehicles.setSubType("Four Wheel");
+        myVehicles.setModel("F450");
+        myVehicles.setEngineSize(5000);
+        myVehicles.setPrice(45000);
+        myVehicles.printVehicles();
 
     }
 
