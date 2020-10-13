@@ -15,25 +15,7 @@ public class Hospital {
         this.hospitalName = name;
         this.address = addr;
 
-        // Add rooms to hospital
-        rooms.put(101, "Operating Room 1");
-        rooms.put(102, "Operating Room 2");
-        rooms.put(204, "Oncology Ward");
-        rooms.put(228, "Pediatric Wing");
-        rooms.put(411, "Emergency Room 1");
-        rooms.put(474, "Pharmacy");
 
-        // Add doctors to hospital
-        doctors.add(new Doctor("Doug", "Wilson", Position.PEDIATRICIAN));
-        doctors.add(new Doctor("Rhea", "Lazlo", Position.SURGEON));
-        doctors.add(new Doctor("Lesley", "Wade", Position.PHYSICIAN));
-
-        // Add insurance to hospital
-        acceptedInsurance.add(InsuranceCompany.AETNA);
-        acceptedInsurance.add(InsuranceCompany.BLUECROSS);
-        acceptedInsurance.add(InsuranceCompany.KAISER);
-        acceptedInsurance.add(InsuranceCompany.HUMANA);
-        acceptedInsurance.add(InsuranceCompany.ANTHEM);
     }
 
     public ArrayList<Doctor> getDoctors() {
@@ -88,12 +70,4 @@ public class Hospital {
         this.rooms.put(roomNum, roomName);
     }
 
-    public static void main(String[] args) {
-        Hospital vets = new Hospital("Veterans Memorial Hospital",
-                new Address("1901 Kuykendahl Street", "Spring", "Texas", 77034));
-
-        vets.printHospitalInfo();
-        vets.printDoctors();
-        vets.printRooms();
-    }
 }
