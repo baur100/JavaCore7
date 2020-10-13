@@ -38,4 +38,10 @@ public class Doctor {
         this.position = position;
     }
 
+    public String toString() {
+        return "Doctor: " +
+                "\nName: " + name +
+                "\nLastName: " + lastName +
+                "\nPosition: " + position;
     }
+}
