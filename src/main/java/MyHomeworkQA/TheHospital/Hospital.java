@@ -14,8 +14,6 @@ public class Hospital {
     {
         this.hospitalName = name;
         this.address = addr;
-
-
     }
 
     public ArrayList<Doctor> getDoctors() {
