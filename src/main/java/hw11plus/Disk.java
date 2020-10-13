@@ -1,6 +1,6 @@
 package hw11plus;
 
-public class Disk extends SystemBlock {
+public class Disk  {
     private String dkModel;
     private String dkBrand;
     private int dkMemory;
@@ -9,10 +9,6 @@ public class Disk extends SystemBlock {
         this.dkModel = dkModel;
         this.dkBrand = dkBrand;
         this.dkMemory = dkMemory;
-    }
-
-    public Disk(Motherboard motherboard, Disk disk, Cpu processor) {
-        super(motherboard, disk, processor);
     }
 
     public String getDkModel() {

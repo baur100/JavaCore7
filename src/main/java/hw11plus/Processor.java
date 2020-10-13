@@ -1,19 +1,16 @@
 package hw11plus;
 
-public class Cpu extends SystemBlock{
+public class Processor {
     private String cpModel;
     private String cpBrand;
     private int cpMemory;
 
-    public Cpu(String cpModel, String cpBrand, int cpMemory) {
+    public Processor(String cpModel, String cpBrand, int cpMemory) {
         this.cpModel = cpModel;
         this.cpBrand = cpBrand;
         this.cpMemory = cpMemory;
     }
 
-    public Cpu(Motherboard motherboard, Disk disk, Cpu processor) {
-        super(motherboard, disk, processor);
-    }
 
     public String getCpModel() {
         return cpModel;

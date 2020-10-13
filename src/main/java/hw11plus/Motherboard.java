@@ -1,6 +1,6 @@
 package hw11plus;
 
-public class Motherboard extends SystemBlock{
+public class Motherboard {
     private String mbModel;
     private String mbBrand;
 
@@ -9,9 +9,6 @@ public class Motherboard extends SystemBlock{
         this.mbBrand = mbBrand;
     }
 
-    public Motherboard(Motherboard motherboard, Disk disk, Cpu processor) {
-        super(motherboard, disk, processor);
-    }
 
     public String getMbmodel() {
         return mbModel;

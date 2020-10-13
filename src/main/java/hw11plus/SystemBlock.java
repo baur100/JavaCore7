@@ -3,12 +3,12 @@ package hw11plus;
 public class SystemBlock {
     private Motherboard motherboard;
     private Disk disk;
-    private Cpu processor;
+    private Processor cpu;
 
-    public SystemBlock(Motherboard motherboard, Disk disk, Cpu processor) {
+    public SystemBlock(Motherboard motherboard, Disk disk, Processor cpu) {
         this.motherboard = motherboard;
         this.disk = disk;
-        this.processor = processor;
+        this.cpu = cpu;
     }
 
     public Motherboard getMotherboard() {
@@ -27,12 +27,12 @@ public class SystemBlock {
         this.disk = disk;
     }
 
-    public Cpu getProcessor() {
-        return processor;
+    public Processor getCpu() {
+        return cpu;
     }
 
-    public void setProcessor(Cpu processor) {
-        this.processor = processor;
+    public void setCpu(Processor cpu) {
+        this.cpu = cpu;
     }
 
     @Override
@@ -40,9 +40,7 @@ public class SystemBlock {
         return "SystemBlock{" +
                 "motherboard=" + motherboard +
                 ", disk=" + disk +
-                ", processor=" + processor +
+                ", cpu=" + cpu +
                 '}';
     }
-
-
 }

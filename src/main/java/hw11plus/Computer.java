@@ -15,6 +15,9 @@ public class Computer {
         this.monitors = monitors;
     }
 
+    public Computer() {
+    }
+
     public SystemBlock getSystemBlock() {
         return systemBlock;
     }

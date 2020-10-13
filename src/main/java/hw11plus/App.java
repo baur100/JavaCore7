@@ -6,7 +6,7 @@ public class App {
 
         Keyboard device1 = new Keyboard("M570","Logitech",true );
         Mouse device3 = new Mouse("M607","Redragon",false);
-        Cpu processor = new Cpu("CPU","Core 17", 350);
+        Processor cpu = new Processor("CPU","Core 17", 350);
         Disk disk = new Disk("M236", "Logitech", 250);
         Motherboard motherboard = new Motherboard("148R", "InfoSec");
 
@@ -17,13 +17,13 @@ public class App {
         Monitor[] monitors = {monitor, monitor1, monitor2};
 
 
-        SystemBlock system = new SystemBlock(motherboard, disk, processor);
+        SystemBlock system = new SystemBlock(motherboard, disk, cpu);
         Computer computer1 = new Computer(system, device1, device3, monitors);
 
         Computer computer2 = new Computer();
         computer2.setKeyboard(device1);
         computer2.setMouse(device3);
-        computer2.setProcessor(system);
+        computer2.setSystemBlock(system);
 
 
         System.out.println(computer1.toString());
