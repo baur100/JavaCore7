@@ -1,18 +1,18 @@
 package hwk13;
 
 import java.util.Arrays;
+import java.util.List;
 
-public class SeasonOutfitCatalog {
-    String eventType;
-    boolean isItWindy;
-    Season season;
-    Outfit outfit;
+public class SeasonOutfitCatalog extends Outfit{
+    private String eventType;
+    private boolean isItWindy;
+    private Season season;
     
-    public SeasonOutfitCatalog (String eventType,boolean isItWindy,Season season,Outfit outfit){
+    public SeasonOutfitCatalog (List<Cloths> casual, List <Cloths> dressy, String eventType, boolean isItWindy, Season season ){
+        super(casual,dressy);
         this.eventType = eventType;
         this.isItWindy = isItWindy;
         this.season = season;
-        this.outfit = outfit;
     }
 
     public String getEventType() {
@@ -39,23 +39,15 @@ public class SeasonOutfitCatalog {
         this.season = season;
     }
 
-    public Outfit getOutfit() {
-        return outfit;
-    }
-
-    public void setOutfit(Outfit outfit) {
-        this.outfit = outfit;
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "SeasonOutfitCatalog{" +
-                "eventType='" + eventType + '\'' +
-                ", isItWindy=" + isItWindy +
-                ", season=" + season +
-                ", outfit=" + outfit +
-                '}';
+    public String chooseOutfit(Season eventSeason) {
+        if(season == Season.FALL || season == Season.WINTER ){
+            System.out.println(dressy);
+            return String.valueOf(dressy);
+        }
+        else
+        {
+            System.out.println(casual);
+            return String.valueOf(casual);
+        }
     }
 }

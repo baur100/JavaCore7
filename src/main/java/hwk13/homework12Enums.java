@@ -13,7 +13,7 @@ public class homework12Enums {
         //first outfit
         Season eventSeason = Season.SPRING;
         System.out.println(eventSeason);
-       
+
 
 
 //    School newDorpHigh = new School(schoolAddress, SchoolType.PUBLIC,"New Dorp High School", SchoolGrade.HIGH);
