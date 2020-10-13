@@ -1,4 +1,4 @@
-package Classwork9;
+package classwork9;
 
 public class Work {
     public static void main(String[] args) {

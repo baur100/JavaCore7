@@ -1,4 +1,4 @@
-package Classwork9;
+package classwork9;
 
 public class Person {
     public String name;
