@@ -36,6 +36,10 @@ public class Main {
 
         System.out.println(doctors);
 
+        System.out.println("______________________________________________________________________________________________________________");
+
+        doctors.forEach(x-> System.out.println(x.getName() + " " + x.getLastName() + " " + x.getPosition()));
+
         System.out.println("--------------------------------------------------------------------------------------------------------------");
 
         for(Map.Entry<Integer,String>pair:rooms.entrySet()){
