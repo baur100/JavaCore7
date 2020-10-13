@@ -4,6 +4,6 @@ public class Inst {
     public static void main(String[] args) {
         Oatmeal myFood = new Oatmeal("Quaker");
 
-        myFood.HealthyFood();
+        myFood.Food();
     }
 }
