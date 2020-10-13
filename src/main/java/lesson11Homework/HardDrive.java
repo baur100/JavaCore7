@@ -8,7 +8,7 @@ public class HardDrive extends BuildComputer {
 
 
     public void printHardDrive(){
-        System.out.println(type +brand + " HardDrive " + " and I cost about $"+ cost);
+        System.out.println(" HardDrive : " + type +brand + " " + " costing: $"+ cost);
 
     }
 

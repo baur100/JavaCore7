@@ -18,7 +18,7 @@ public class GraphicsCard extends BuildComputer {
 
 
     public void printGraphicsCard(){
-        System.out.println(type +brand + " Graphics Card " + "size is about " + size + " Gb" +  "and I cost about $" + cost);
+        System.out.println(" Graphics Card:" + type + " " + brand + " " + size + " Giga Byte" + " costing about: $" + cost);
     }
 }
 

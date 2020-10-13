@@ -13,11 +13,14 @@ public class BuildComputer {
     protected String brand;
     protected int cost;
 
-   public BuildComputer(String type, String brand, int cost) {
-       this.type = type;
-       this.brand = brand;
-       this.cost = cost;
-   }
+    public BuildComputer(String type, String brand, int cost) {
+        this.type = type;
+        this.brand = brand;
+        this.cost = cost;
+    }
+
+    public BuildComputer() {
+    }
 
     public void setType(String type) {
         this.type = type;
@@ -45,6 +48,8 @@ public class BuildComputer {
     }
 
     public void printComputer(){
-       System.out.println(type + brand + " and my total cost is $" + cost);
+
+       System.out.println(" I am a Computer " + type +  "\n" + " Brand :  "  + brand + "\n total cost is: $ " + cost);
+       System.out.println(" I contain the following: ");
     }
 }

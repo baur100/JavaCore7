@@ -7,7 +7,7 @@ public class Keyboard extends BuildComputer {
     }
 
     public void printKeyboard(){
-        System.out.println(type +brand + " Keyboard " + " and I cost about $"+ cost);
+        System.out.println(" Keyboard: " + type +  " " +brand + " costing: $"+ cost);
 
 
     }

@@ -7,7 +7,7 @@ public class Mouse extends BuildComputer {
     }
 
     public void printMouse(){
-        System.out.println(type + brand + " mouse ." + " I cost about $" + cost);
+        System.out.println(" Mouse : " + type + " " + brand + " costing: $" + cost);
 
     }
 }
