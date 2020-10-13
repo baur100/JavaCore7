@@ -10,6 +10,10 @@ public class Microchip {
         this.activated = activated;
     }
 
+    public String info() {
+        return "Serial No.: "+getSerialNumber();
+    }
+
     public String getSerialNumber() {
         return serialNumber;
     }

@@ -25,7 +25,7 @@ public class AppTwo {
         weeklyWages.put(1700, "Software Engineer");
 
 
-        /*System.out.println(showsAndCharacters);
+        System.out.println(showsAndCharacters);
         showsAndCharacters.replace("The Simpsons", "Lisa Simpson");
         System.out.println(showsAndCharacters);
         System.out.println(showsAndCharacters.get("Peanuts"));
@@ -45,18 +45,20 @@ public class AppTwo {
         weeklyWages.put(875, "Security Supervisor");
         System.out.println(weeklyWages);
         weeklyWages.entrySet().stream().forEach
-                (entry-> System.out.println("Key : "+entry.getKey()+"   Value : "+entry.getValue()));*/
-
+                (entry-> System.out.println("Key : "+entry.getKey()+"   Value : "+entry.getValue()));
+        System.out.println();
 
         Dog d1 = new Dog("Solo","Bernese Mountain Dog");
         Dog d2 = new Dog("Doobie Doo","Beagle Mix");
         Dog d3 = new Dog("Popeye","Cane Corso");
         Dog d4 = new Dog("Wario","Pekingnese");
+        Dog d5 = new Dog("Ringo","Coyote Mix");
 
         Microchip mic1 = new Microchip("USDAS8337494930203023", true);
         Microchip mic2 = new Microchip("USXQ03989303881389842", true);
         Microchip mic3 = new Microchip("USYJ93773937389232899", false);
         Microchip mic4 = new Microchip("USGR39849392812039098", false);
+        Microchip mic5 = new Microchip("USTE98371128299273221", true);
 
         dogIds.put(d1, mic1);
         dogIds.put(d2, mic2);
@@ -65,6 +67,15 @@ public class AppTwo {
 
         //System.out.println(dogIds);
         dogIds.entrySet().stream().forEach
-                (entry-> System.out.println("Key : "+entry.getKey()+"   Value : "+entry.getValue()));
+                (entry-> System.out.println("Key : "+entry.getKey().info()+"   Value : "+entry.getValue().info()));
+        dogIds.remove(d2, mic2);
+        System.out.println();
+        dogIds.entrySet().stream().forEach
+                (entry-> System.out.println("Key : "+entry.getKey().info()+"   Value : "+entry.getValue().info()));
+        dogIds.put(d5, mic2);
+        dogIds.put(d2, mic5);
+        System.out.println();
+        dogIds.entrySet().stream().forEach
+                (entry-> System.out.println("Key : "+entry.getKey().info()+"   Value : "+entry.getValue().info()));
     }
 }
