@@ -1,4 +1,4 @@
-package hwHospital;
+package aehwHospital;
 
 public enum Position {
     ALLERGIST,

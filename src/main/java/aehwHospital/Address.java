@@ -1,4 +1,4 @@
-package hwHospital;
+package aehwHospital;
 
 public class Address {
     private String streetAddress;
@@ -47,11 +47,9 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
-                "streetAddress='" + streetAddress + '\'' +
-                ", town='" + town + '\'' +
-                ", state='" + state + '\'' +
-                ", zip=" + zip +
-                '}';
+        return "streetAddress: " + streetAddress +
+                ", town: " + town +
+                ", state: " + state +
+                ", zip: " + zip;
     }
 }
