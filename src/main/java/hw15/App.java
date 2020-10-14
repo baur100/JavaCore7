@@ -38,7 +38,6 @@ public class App {
         }
 
 
-
         Map<Style, Colors> auto = new HashMap<>();
         auto.put(new Style("Electric"), Colors.BLUE);
         auto.put(new Style("Truck"), Colors.BLACK);

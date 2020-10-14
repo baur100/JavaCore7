@@ -1,17 +1,15 @@
 package hw15;
 
+import java.util.List;
+
 public class Type {
-    private String type;
+    private List<Payment> type;
 
-    public Type(String type) {
-        this.type = type;
-    }
-
-    public String getType() {
+    public List<Payment> getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(List<Payment> type) {
         this.type = type;
     }
 }
