@@ -10,6 +10,11 @@ public class Stan12 {
 
         book1.macOsCompatibleApps();
         bookPro1.macOsCompatibleApps();
+
+        Laptop book3 = new MacBookAir("13", "intel i3", "size", true);
+        Laptop book4 = new MacBookAir("12", "intel i3", "small size", true);
+
+        MacOS book5 = new MacBookAir("13","intel i3", "medium size", false);
     }
 
 }

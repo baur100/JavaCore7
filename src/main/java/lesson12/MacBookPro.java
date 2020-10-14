@@ -12,7 +12,7 @@ public class MacBookPro extends Laptop implements MacOS {
         return retina;
     }
 
-    @Override
+
     public void macOsCompatibleApps() {
         System.out.println("Only MacOS apps can be installed on Macbook Pro");
     }

@@ -14,7 +14,6 @@ public class MacBookAir extends Laptop implements MacOS{
         this.usbPort = usbPort;
     }
 
-    @Override
     public void macOsCompatibleApps() {
         System.out.println("Only MacOS apps can be installed on Macbook Air");
 
