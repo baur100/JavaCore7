@@ -4,27 +4,27 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Outfit {
-    protected List<Cloths> casual;
-    protected List<Cloths> dressy;
+    private Tops top;
+    private Bottoms bottoms;
 
-    public Outfit(List<Cloths> casual, List<Cloths> dressy) {
-        this.casual = casual;
-        this.dressy = dressy;
+    public Outfit(Tops top, Bottoms bottoms) {
+        this.top = top;
+        this.bottoms = bottoms;
     }
 
-    public List<Cloths> getCasual() {
-        return casual;
+    public Tops getTop() {
+        return top;
     }
 
-    public void setCasual(List<Cloths> casual) {
-        this.casual = casual;
+    public Bottoms getBottoms() {
+        return bottoms;
     }
 
-    public List<Cloths> getDressy() {
-        return dressy;
-    }
-
-    public void setDressy(List<Cloths> dressy) {
-        this.dressy = dressy;
+    @Override
+    public String toString() {
+        return "Outfit{" +
+                "top=" + top +
+                ", bottoms=" + bottoms +
+                '}';
     }
 }

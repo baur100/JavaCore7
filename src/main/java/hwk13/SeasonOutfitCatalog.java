@@ -2,33 +2,21 @@ package hwk13;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
-public class SeasonOutfitCatalog extends Outfit{
-    private String eventType;
-    private boolean isItWindy;
+public class SeasonOutfitCatalog {
     private Season season;
-    
-    public SeasonOutfitCatalog (List<Cloths> casual, List <Cloths> dressy, String eventType, boolean isItWindy, Season season ){
-        super(casual,dressy);
-        this.eventType = eventType;
-        this.isItWindy = isItWindy;
+    private Accessories accessories;
+    private Map<String,String> weather; // weather and night
+    private boolean isItWindy;
+    private Outfit outfit;
+
+    public SeasonOutfitCatalog(Season season, Accessories accessories, Map<String, String> weather, boolean isItWindy, Outfit outfit) {
         this.season = season;
-    }
-
-    public String getEventType() {
-        return eventType;
-    }
-
-    public void setEventType(String eventType) {
-        this.eventType = eventType;
-    }
-
-    public boolean isItWindy() {
-        return isItWindy;
-    }
-
-    public void setItWindy(boolean itWindy) {
-        isItWindy = itWindy;
+        this.accessories = accessories;
+        this.weather = weather;
+        this.isItWindy = isItWindy;
+        this.outfit = outfit;
     }
 
     public Season getSeason() {
@@ -39,15 +27,45 @@ public class SeasonOutfitCatalog extends Outfit{
         this.season = season;
     }
 
-    public String chooseOutfit(Season eventSeason) {
-        if(season == Season.FALL || season == Season.WINTER ){
-            System.out.println(dressy);
-            return String.valueOf(dressy);
-        }
-        else
-        {
-            System.out.println(casual);
-            return String.valueOf(casual);
-        }
+    public Accessories getAccessories(){
+        return accessories;
+    }
+
+    public void setAccessories(Accessories accessories){
+        this.accessories = accessories;
+    }
+
+    public Map<String, String> getWeather() {
+        return weather;
+    }
+
+    public void setWeather(Map<String, String> weather) {
+        this.weather = weather;
+    }
+
+    public boolean isItWindy() {
+        return isItWindy;
+    }
+
+    public void setItWindy(boolean itWindy) {
+        isItWindy = itWindy;
+    }
+
+    public Outfit getOutfit() {
+        return outfit;
+    }
+
+    public void setOutfit(Outfit outfit) {
+        this.outfit = outfit;
+    }
+
+    @Override
+    public String toString() {
+        return "SeasonOutfitCatalog{" +
+                "season=" + season +
+                ", accessories=" + accessories +
+                ", weather=" + weather +
+                ", isItWindy=" + isItWindy +
+                '}';
     }
 }
