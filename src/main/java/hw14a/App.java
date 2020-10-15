@@ -1,5 +1,6 @@
 package hw14a;
 
+
 import java.util.*;
 
 public class App {
@@ -18,6 +19,8 @@ public class App {
 
         System.out.println(doctors);
 //        doctors.printEmployeeInfo(Arrays.toString(4));
+//
+//        doctors.printDoctorInfo();
 
 
         Map<Integer, String> rooms = new HashMap<>();
@@ -30,7 +33,7 @@ public class App {
 
 
         Hospital universityHosp = new Hospital("UniversityHospital", hospAddress, doctors, rooms, insurance);
-        System.out.println(universityHosp);
+        System.out.println(universityHosp.toString());
 
 
 

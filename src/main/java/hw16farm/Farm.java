@@ -42,13 +42,15 @@ public class Farm {
     public void setCattle(Map<Cattle, Integer> cattle) {
         this.cattle = cattle;
     }
-
-    public void printInfo()
-    {
-
+    public void printFarmInfo () {
         System.out.println(" Farm name" + name + address + cattle + agreeCultural);
-
     }
+//    public void printInfo()
+//    {
+//
+//        System.out.println(" Farm name" + name + address + cattle + agreeCultural);
+//
+//    }
 //    public printInfo(Farm) {
 //        return;
 //

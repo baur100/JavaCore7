@@ -23,5 +23,14 @@ public class Hospital {
         return hospitalName;
     }
 
-
+    @Override
+    public String toString() {
+        return "Hospital{" +
+                "hospitalName='" + hospitalName + '\'' +
+                ", address=" + address +
+                ", doctors=" + doctors +
+                ", rooms=" + rooms +
+                ", insurance=" + insurance +
+                '}';
+    }
 }

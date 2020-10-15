@@ -11,9 +11,11 @@ public class Doctor {
         this.position = position;
     }
 
-    public void printDoctors() {
+    public void printDoctorInfo () {
         System.out.println("I am "+ name + " " + lastName + position);
     }
+
+
 
     @Override
     public String toString() {

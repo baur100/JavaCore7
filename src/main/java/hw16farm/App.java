@@ -30,6 +30,8 @@ public class App {
 
         System.out.println(bakerFarm.toString());
 
+        bakerFarm.printFarmInfo();
+
 
     }
 }
