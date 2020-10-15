@@ -22,6 +22,6 @@ public class App {
         Hospital mountSinai = new Hospital("Mount Sinai",hospitalAddress,doctors,rooms,acceptedInsurances);
         System.out.println(mountSinai);
 
-       // Hospital myHospital = new Hospital("Hospital made by ME",hospitalAddress,doctors)
+       
     }
 }

@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.Map;
 
 public class SeasonOutfitCatalog {
-    private Season season;
+    private List<Season> season;
     private Accessories accessories;
     private Map<String,String> weather; // weather and night
     private boolean isItWindy;
     private Outfit outfit;
 
-    public SeasonOutfitCatalog(Season season, Accessories accessories, Map<String, String> weather, boolean isItWindy, Outfit outfit) {
+    public SeasonOutfitCatalog(List<Season> season, Accessories accessories, Map<String, String> weather, boolean isItWindy, Outfit outfit) {
         this.season = season;
         this.accessories = accessories;
         this.weather = weather;
@@ -19,11 +19,11 @@ public class SeasonOutfitCatalog {
         this.outfit = outfit;
     }
 
-    public Season getSeason() {
+    public List<Season> getSeason() {
         return season;
     }
 
-    public void setSeason(Season season) {
+    public void setSeason(List<Season> season) {
         this.season = season;
     }
 

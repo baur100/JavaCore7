@@ -14,7 +14,7 @@ public class AppEnumsInheritance {
         confirmedEventList.add(Season.FALL);
         confirmedEventList.add(Season.SUMMER);
 
-        SeasonOutfitCatalog catalogEntry = new SeasonOutfitCatalog(Season.FALL, blueAccessories, weather, false, dressy);
+        SeasonOutfitCatalog catalogEntry = new SeasonOutfitCatalog(confirmedEventList, blueAccessories, weather, false, dressy);
         System.out.println(catalogEntry);
 
     }
