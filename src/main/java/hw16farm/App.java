@@ -31,8 +31,5 @@ public class App {
         System.out.println(bakerFarm.toString());
 
 
-//        Hospital universityHosp = new Hospital("UniversityHospital", hospAddress, doctors, rooms, insurance);
-//        System.out.println(universityHosp);
-
     }
 }

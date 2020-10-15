@@ -43,6 +43,12 @@ public class Farm {
         this.cattle = cattle;
     }
 
+    public void printInfo()
+    {
+
+        System.out.println(" Farm name" + name + address + cattle + agreeCultural);
+
+    }
 //    public printInfo(Farm) {
 //        return;
 //
