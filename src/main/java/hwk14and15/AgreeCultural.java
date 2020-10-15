@@ -26,9 +26,11 @@ public class AgreeCultural {
         this.fieldsNumber = fieldsNumber;
     }
 
-    public void printInfo(){
-        System.out.println("AgreeCultural= \nquantity: " + fieldsNumber+ " nameOfCulture: "
-                + nameOfCulture);
-
+    @Override
+    public String toString() {
+        return "AgreeCultural{" +
+                "nameOfCulture='" + nameOfCulture + '\'' +
+                ", fieldsNumber=" + fieldsNumber +
+                '}';
     }
 }

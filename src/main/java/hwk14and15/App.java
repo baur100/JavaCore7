@@ -24,9 +24,10 @@ public class App {
         myCattle.put(Cattle.SHEEPS, 87);
 
         List<AgreeCultural> agreeCultural = new ArrayList<>();
+        agreeCultural.add(new AgreeCultural("weat",3));
 
 
-        Farm myFisrtFarm = new Farm("Nice Farm",farmAddress,myCattle, agreeCultural );
-        System.out.println(myFisrtFarm);
+        Farm myFirstFarm = new Farm("Nice Farm",farmAddress,myCattle, agreeCultural );
+        System.out.println(myFirstFarm);
     }
 }
