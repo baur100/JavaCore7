@@ -17,4 +17,9 @@ public class AgreeCultural {
     public void setType(String type) {
         this.type = type;
     }
+
+        public String agreeCultInfo() {
+        return "AgreeCultural: " +
+                "type: " + type;
+    }
 }

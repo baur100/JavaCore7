@@ -1,12 +1,12 @@
 package Lesson_16_HW;
 
-public class nameOfCulture {
+public class NameOfCulture {
     private String name;
 
-    public nameOfCulture() {
+    public NameOfCulture() {
     }
 
-    public nameOfCulture(String name) {
+    public NameOfCulture(String name) {
         this.name = name;
     }
 
@@ -18,7 +18,7 @@ public class nameOfCulture {
         this.name = name;
     }
 
-    public String toString() {
-        return "\nnameOfCulture: + ";
+    public String nameOfCultInfo() {
+        return "nameOfCulture: + "+ name;
     }
 }

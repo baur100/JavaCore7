@@ -19,8 +19,6 @@ public class fieldsNumber {
     }
 
     public String fields_info() {
-        return "\nfieldsNumber1: + " +
-                "\nfieldsNumber2: + " +
-                "\nfieldsNumber3: + ";
+        return "fieldsNumber: + " + fieldsNumber;
     }
 }
