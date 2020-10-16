@@ -47,4 +47,14 @@ public class Farm {
     public void setAgreeCultural(List<AgreeCultural> agreeCultural) {
         this.agreeCultural = agreeCultural;
     }
+
+    @Override
+    public String toString() {
+        return "Farm{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                ", cattle=" + cattle +
+                ", agreeCultural=" + agreeCultural +
+                '}';
+    }
 }
