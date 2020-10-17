@@ -11,11 +11,12 @@ public class App {
         Dog dog1 = new Dog();
         Cat cat1 = new Cat();
 
-//        dog1.sound();
-//        cat1.sound();
+     //   dog1.sound();
+
+      //cat1.sound();
 
         Animal an = new Cat();
-//        an.sound();
+     //an.sound();
         Animal[] animals = new Animal[4];
 
         animals[0] = new Cat();

@@ -12,7 +12,9 @@ public class House {
         bathrooms = baths;
         this.address = address;
     }
-    public House(){}
+    public House(){
+
+    }
 
     public House(int bedrooms, int bathrooms, String address){
         this.address = address;

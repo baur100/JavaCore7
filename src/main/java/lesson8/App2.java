@@ -11,18 +11,19 @@ public class App2 {
     }
 
     public static int[] getOddFromArray(int[] arr) {
-        int count = 0;
+         int count = 0;
+        //int[] arr = {1,2,5,4,1,3};
         for (int v : arr){
             if(v%2==1){
                 count++;
             }
         }
+            //count 4
         int[]res = new int[count];
         int index = 0;
         for (int v:arr){
             if(v%2==1){
-                res[index]=v;
-                index++;
+             res[index]=v;
             }
         }
         return res;
