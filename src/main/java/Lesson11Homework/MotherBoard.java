@@ -1,8 +1,8 @@
 package Lesson11Homework;
 //use "extends" to create a child class.
 public class MotherBoard extends ComputerManufacture {
-    protected String size;
-    protected String subType;
+    private String size;
+    private String subType;
 
     public MotherBoard (String type, String brand,int cost, String size, String subType )
     //create extra variables if you like as ^^ then, create a "full constructor" of the class as ^^,

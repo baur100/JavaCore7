@@ -1,8 +1,8 @@
 package Lesson11Homework;
 //use "extends" to create a child class.
 public class PowerSupply extends ComputerManufacture {
-    protected int voltageInput;
-    protected int voltageOutput;
+    private int voltageInput;
+    private int voltageOutput;
     public PowerSupply (String type, String brand, int cost, int voltageInput, int voltageOutput)
     //create extra variables if you like as ^^ then, create a "full constructor" of the class as ^^,
     // then use "super" to bring the "Super class/ parent class" attributes as below.

@@ -1,8 +1,8 @@
 package Lesson11Homework;
 
 public class Processor extends ComputerManufacture {
-    protected String subType;
-    protected int speed;
+    private String subType;
+    private int speed;
     public Processor (String type, String brand, int cost, String subType, int speed)
 
     {

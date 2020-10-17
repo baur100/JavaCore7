@@ -1,5 +1,5 @@
 package Lesson10Homework;
-//first to create the fields, ffields and instances are the same thing
+//first to create the fields, fields and instances are the same thing
 public class CellPhones {
     private String brand;
     private String generation;

@@ -1,8 +1,8 @@
 package Lesson11Homework;
 //use "extends" to create a child class. This is inheritance
 public class HardDrive extends ComputerManufacture {
-    protected int size;
-    protected String subType;
+    private int size;
+    private String subType;
     public HardDrive(String type, String brand, int cost,int size,String subType)
     //create extra variables if you like as ^^ then, create a "full constructor" of the class as ^^,
     // then use "super" to bring the "Super class/ parent class" attributes as below.
