@@ -16,7 +16,7 @@ public class App {
         searchField.sendKeys("Java");
         searchField.sendKeys(Keys.ENTER);
 
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         WebElement searchResult = driver.findElement(By.cssSelector("[data-purpose='safely-set-inner-html:related-topics:topic-name-link']"));
 
