@@ -28,7 +28,8 @@ public class App {
             System.out.println("Actual value is = "+ text);
         }
 
-        Thread.
+        Thread.sleep(10000);
+        driver.close();
 
 
 
