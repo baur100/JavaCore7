@@ -1,14 +1,12 @@
 package h11plus;
 
-public class Mouse {
+public class Motherboard {
     private String model;
     private String brand;
-    public boolean isWireless;
 
-    public Mouse(String model, String brand, boolean isWireless) {
+    public Motherboard(String model, String brand) {
         this.model = model;
         this.brand = brand;
-        this.isWireless = isWireless;
     }
 
     public String getModel() {
@@ -27,20 +25,11 @@ public class Mouse {
         this.brand = brand;
     }
 
-    public boolean isWireless() {
-        return isWireless;
-    }
-
-    public void setWireless(boolean wireless) {
-        isWireless = wireless;
-    }
-
     @Override
     public String toString() {
-        return "Mouse{" +
+        return "Motherboard{" +
                 "model='" + model + '\'' +
                 ", brand='" + brand + '\'' +
-                ", isWireless=" + isWireless +
                 '}';
     }
 }
