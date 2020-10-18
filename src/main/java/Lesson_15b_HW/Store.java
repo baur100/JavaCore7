@@ -17,6 +17,9 @@ public class Store {
         this.girlsToysArrayList = girlsToysArrayList;
     }
 
+    public Store(String gill, String toyStore, Address address) {
+    }
+
     public String getName() {
         return name;
     }
