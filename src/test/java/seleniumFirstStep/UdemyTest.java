@@ -28,7 +28,8 @@ public class UdemyTest {
         driver.get("https://udemy.com");
 
         // Act
-        WebElement searchField = driver.findElement(By.cssSelector("[name='q']"));
+//        WebElement searchField = driver.findElement(By.cssSelector("[name='q']"));
+        WebElement searchField = driver.findElement(By.cssSelector("[placeholder~=Search]"));
         searchField.sendKeys("Java");
         searchField.sendKeys(Keys.ENTER);
 
