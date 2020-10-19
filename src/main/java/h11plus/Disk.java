@@ -1,14 +1,16 @@
 package h11plus;
 
-public class Mouse {
+public class Disk extends Object{
     private String model;
     private String brand;
-    public boolean isWireless;
+    private String type;
+    private int size;
 
-    public Mouse(String model, String brand, boolean isWireless) {
+    public Disk(String model, String brand, String type, int size) {
         this.model = model;
         this.brand = brand;
-        this.isWireless = isWireless;
+        this.type = type;
+        this.size = size;
     }
 
     public String getModel() {
@@ -27,20 +29,29 @@ public class Mouse {
         this.brand = brand;
     }
 
-    public boolean isWireless() {
-        return isWireless;
+    public String getType() {
+        return type;
     }
 
-    public void setWireless(boolean wireless) {
-        isWireless = wireless;
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 
     @Override
     public String toString() {
-        return "Mouse{" +
+        return "Disk{" +
                 "model='" + model + '\'' +
                 ", brand='" + brand + '\'' +
-                ", isWireless=" + isWireless +
+                ", type='" + type + '\'' +
+                ", size=" + size +
                 '}';
     }
 }
