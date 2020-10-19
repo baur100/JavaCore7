@@ -20,5 +20,6 @@ public class App2 {
         snickersColors.add(Colors.WHITE);
 
         Snickers nike = new Snickers(snickersColors);
+        System.out.println(nike.toString());
     }
 }

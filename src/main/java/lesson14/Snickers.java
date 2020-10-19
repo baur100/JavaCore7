@@ -12,4 +12,11 @@ public class Snickers {
     public List<Colors> getSnickersColors() {
         return snickersColors;
     }
+
+    @Override
+    public String toString() {
+        return "Snickers{" +
+                "snickersColors=" + snickersColors +
+                '}';
+    }
 }

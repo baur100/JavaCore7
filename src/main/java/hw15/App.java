@@ -1,6 +1,6 @@
 package hw15;
 
-import hospitalHomework.Doctor;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
