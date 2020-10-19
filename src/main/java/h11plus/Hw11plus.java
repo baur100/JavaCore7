@@ -1,7 +1,7 @@
 package h11plus;
 
 public class Hw11plus {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Mouse myMouse = new Mouse("M705", "Logitech", "wired" );
         Mouse hisMouse = new Mouse ("Mobile Mouse 3600", "Microsoft", "wireless");
         SystemBlock myProcessor = new SystemBlock("Intell", "Core i5-10600K", "x86", "64 bits");
@@ -16,7 +16,7 @@ public class Hw11plus {
         Computer hisComputer = new Computer(hisProcessor, hisKeyboard, hisMouse, new Monitor[]{monitor3, monitor4});
 
         System.out.println(myComputer.getDescription());
-        System.out.println(hisComputer.getDescription());
+        System.out.println(hisComputer.getDescription());*/
 
-    }
+
 }
