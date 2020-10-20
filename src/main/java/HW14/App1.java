@@ -35,6 +35,7 @@ public class App1 {
         NewAppleProducts products = new NewAppleProducts(gadgets,names,price);
 
         System.out.println(products.toString());
+        products.printGadgets();
 
     }
 }

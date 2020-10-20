@@ -29,6 +29,11 @@ public class NewAppleProducts {
         this.gadgets = gadgets;
 
     }
+public void printGadgets(){
+        for (String g: gadgets){
+            System.out.println("\n"+g +"It's my new gadget!");
+        }
+}
 
     @Override
     public String toString() {
