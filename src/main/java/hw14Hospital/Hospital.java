@@ -1,4 +1,4 @@
-package hw14;
+package hw14Hospital;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package hw14;
+package hw14Hospital;
 
 public class Doctor {
     private String name;
