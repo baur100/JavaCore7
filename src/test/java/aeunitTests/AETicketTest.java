@@ -4,7 +4,7 @@ import aetickets.AETickets;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TicketTest {
+public class AETicketTest {
 
     //Unit test - tests functions/methods
     @Test //-test annotation

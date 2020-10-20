@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 public class UdemyTest {
     private WebDriver driver;
     @BeforeMethod
-    public void startUp(){
+   public void startUp(){
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
     }
     @AfterMethod
     public void tearDown() throws InterruptedException {
@@ -25,6 +25,7 @@ public class UdemyTest {
     @Test
     public void udemy_searchingJava_have1000results() throws InterruptedException {
         //Arrange
+
 
         driver.get("https://www.udemy.com/");
 
@@ -41,6 +42,7 @@ public class UdemyTest {
         String text = searchResult.getText();
 
         Assert.assertEquals(text, "10,000 results for “java”");
+
 
     }
 
