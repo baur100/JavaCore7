@@ -1,4 +1,4 @@
-package notes16Selenium;
+package notes17Selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

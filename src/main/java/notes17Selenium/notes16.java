@@ -1,3 +1,5 @@
+package notes17Selenium;
+
 public class notes16 {
 
     //static belongs to class
