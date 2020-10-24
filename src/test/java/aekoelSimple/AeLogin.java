@@ -64,5 +64,24 @@ public class AeLogin {
         Assert.assertTrue(logoutButton.isDisplayed());
     }
 
+    @Test
+    public void loginToKoel_IncorrectCredentials_NotSuccessfulLogin() throws InterruptedException {
+        driver.get("https://koelapp.testpro.io/");
 
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("[type ='email']")));
+
+        WebElement loginEmail = driver.findElement(By.cssSelector("[type ='email']"));
+        WebElement loginPassword = driver.findElement(By.xpath("//*[@type='password']"));
+        WebElement loginButton = driver.findElement(By.tagName("button"));
+
+        loginEmail.sendKeys("koeluser06@testpro.io");
+        loginPassword.sendKeys("wrong password");
+        loginButton.click();
+
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='error']")));
+
+        WebElement ErrorFrame = driver.findElement(By.xpath("//*[@class='error']"));
+
+        Assert.assertTrue(ErrorFrame.isDisplayed());
+    }
 }

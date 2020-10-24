@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class aeMainPage {
+public class AEMainPage {
     private WebDriver driver;
 
-    public aeMainPage(WebDriver driver) {
+    public AEMainPage(WebDriver driver) {
         this.driver = driver;
     }
 
