@@ -3,17 +3,17 @@ package aePageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pageObjects.MainPage;
 
-public class AELoginPage {
-    private WebDriver driver;
+public class AELoginPage extends AEBasePage{
 
     public AELoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
-    private WebElement getLoginEmail() throws InterruptedException {
-        Thread.sleep(3000);
+    private WebElement getLoginEmail() {
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("[type ='email']")));
         return driver.findElement(By.cssSelector("[type ='email']"));
     }
 
@@ -25,8 +25,8 @@ public class AELoginPage {
         return driver.findElement(By.tagName("button"));
     }
 
-    private WebElement getErrorFrame() throws InterruptedException {
-        Thread.sleep(3000);
+    private WebElement getErrorFrame(){
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".error")));
         return driver.findElement(By.cssSelector(".error"));
     }
 
@@ -34,14 +34,14 @@ public class AELoginPage {
         driver.get("https://koelapp.testpro.io/");
     }
 
-    public AEMainPage login(String email, String password) throws InterruptedException {
+    public AEMainPage login(String email, String password){
         getLoginEmail().sendKeys(email);
         getLoginPassword().sendKeys(password);
         getLoginButton().click();
         return new AEMainPage(driver);
     }
 
-    public boolean isError() throws InterruptedException {
+    public boolean isError(){
         return getErrorFrame().isDisplayed();
     }
 }
