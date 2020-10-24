@@ -1,9 +1,6 @@
 package aekoelSimple;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -14,7 +11,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 public class AeLogin {
@@ -26,7 +22,7 @@ public class AeLogin {
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         driver = new ChromeDriver();
        // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); // maximum 10 sec is allawed time to wait for webElement
-        // wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 10);
 
         fluentWait = new FluentWait<WebDriver>(driver)
                 .pollingEvery(Duration.ofMillis(100))
@@ -67,4 +63,6 @@ public class AeLogin {
 
         Assert.assertTrue(logoutButton.isDisplayed());
     }
+
+
 }
