@@ -34,6 +34,12 @@ public class App {
             }
         }
 
+        if (results.size() > 0) {
+            System.out.println("Found " + results.size() + " results");
+        } else {
+            System.out.println("Nothing found");
+        }
+
         Thread.sleep(5000);
 
         driver.close();
