@@ -3,16 +3,15 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class LoginPage {
-    private WebDriver driver;
-
+public class LoginPage extends BasePage{
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
-    private WebElement getEmailField() throws InterruptedException {
-        Thread.sleep(2000);
+    private WebElement getEmailField() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[type='email']")));
         return driver.findElement(By.cssSelector("[type='email']"));
     }
     private WebElement getPasswordField(){
@@ -22,8 +21,8 @@ public class LoginPage {
         return driver.findElement(By.cssSelector("button"));
     }
 
-    private WebElement getErrorFrame() throws InterruptedException {
-        Thread.sleep(1000);
+    private WebElement getErrorFrame() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".error")));
         return driver.findElement(By.cssSelector(".error"));
     }
 
@@ -31,13 +30,13 @@ public class LoginPage {
         driver.get("https://koelapp.testpro.io/");
     }
 
-    public MainPage login(String email, String password) throws InterruptedException {
+    public MainPage login(String email, String password){
         getEmailField().sendKeys(email);
         getPasswordField().sendKeys(password);
         getLoginButton().click();
         return new MainPage(driver);
     }
-    public boolean isError() throws InterruptedException {
+    public boolean isError() {
         return getErrorFrame().isDisplayed();
     }
 }
