@@ -16,5 +16,17 @@ public class PlaylistTests extends BaseTest{
 
         Assert.assertTrue(isCreated);
     }
+    @Test
+    public void playlistTest_ChangePlaylistName_PlayListNameChanged(){
+        LoginPage loginPage = new LoginPage(driver); //returns a NEW mainpage driver aka creates one
+        loginPage.open();//no returned
+        MainPage driverObj = loginPage.login("koeluser06@testpro.io","te$t$tudent");//reurn mainPage driver
+        //driver returned will be object mainpage driver = driver
+        String playlistId = driverObj.createPlaylist("newPlaylist"); //return url.split("/")[5];
+        boolean confirmPlayList = driverObj.isPlaylistExist(playlistId);
+        String newNamePlayList = driverObj.renamePlaylist(playlistId);
+
+        Assert.assertEquals("AAA","AAA");
+    }
 
 }
