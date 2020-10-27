@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Master Suit" >
+    <test name="All Tests">
+        <classes>
+            <class name="aePageObjectTests.AELoginTests">
+                <methods>
+                    <include name="loginToKoel_CorrectCredentials_SuccessfulLogin"/>
+                    <include name="loginToKoel_IncorrectCredentials_ErrorFrame"/>
+                </methods>
+            </class>
+            <class name="aePageObjectTests.AEPlaylistTests">
+                <methods>
+                    <include name="playListTest_CreatePlaylist_PlaylistCreated"/>
+                    <include name="playListTest_RenamePlaylist_PlaylistRenamed()"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

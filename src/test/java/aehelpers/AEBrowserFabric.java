@@ -3,8 +3,10 @@ package aehelpers;
 import aeEnums.AEBrowserTypes;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class AEBrowserFabric {
     public static WebDriver getDriver(AEBrowserTypes type){
@@ -16,8 +18,10 @@ public class AEBrowserFabric {
     }
 
     private static WebDriver getFirefoxDriver() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--headless");
         System.setProperty("webdriver.gecko.driver","geckodriver.exe");
-        return new FirefoxDriver();
+        return new FirefoxDriver(options);
     }
 
     private static WebDriver getEdgeDriver() {
@@ -26,8 +30,10 @@ public class AEBrowserFabric {
     }
 
     private static WebDriver getChromeDriver() {
+        ChromeOptions options = new ChromeOptions();
+        //options.addArguments("--headless");
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-        return new ChromeDriver();
+        return new ChromeDriver(options);
     }
 
 }
