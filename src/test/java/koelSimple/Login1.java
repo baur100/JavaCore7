@@ -60,4 +60,24 @@ public class Login1 {
 
     }
 
+    @Test
+    public void loginToKoel_WrongCredentials_RedFrame(){
+        driver.get("https://koelapp.testpro.io/");
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[type='email']")));
+
+        WebElement loginEmail = driver.findElement(By.cssSelector("[type='email']"));
+        WebElement loginPassword = driver.findElement(By.xpath("//*[@type='password']"));
+        WebElement loginButton = driver.findElement(By.cssSelector("button"));
+
+        loginEmail.sendKeys("koeluser06@testpro.io");
+        loginPassword.sendKeys("wrongPassword");
+        loginButton.click();
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".error")));
+        WebElement redFrame = driver.findElement(By.cssSelector(".error"));
+        Assert.assertTrue(redFrame.isDisplayed());
+
+    }
+
 }
