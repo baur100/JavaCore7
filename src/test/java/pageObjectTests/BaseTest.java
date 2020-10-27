@@ -13,8 +13,7 @@ public class BaseTest {
         driver = BrowserFabric.getDriver(BrowserType.FIREFOX);
     }
     @AfterMethod
-    public void tearDown()throws InterruptedException {
-        Thread.sleep(5000);
+    public void tearDown(){
         driver.quit();
     }
 }
