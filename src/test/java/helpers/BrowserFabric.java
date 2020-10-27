@@ -16,7 +16,7 @@ public class BrowserFabric {
     }
 
     private static WebDriver getFirefoxDriver() {
-        System.setProperty("webdriver.gecko.driver","geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","geckodriver");
         return new FirefoxDriver();
     }
 
@@ -26,7 +26,7 @@ public class BrowserFabric {
     }
 
     private static WebDriver getChromeDriver() {
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         return new ChromeDriver();
     }
 }

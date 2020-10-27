@@ -26,6 +26,6 @@
 hs_err_pid*
 
 # browser drivers
-chromedriver*.*
+chromedriver*
 geckodriver*.*
 msedgedriver*.*
