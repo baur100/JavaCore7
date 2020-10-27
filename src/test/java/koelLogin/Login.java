@@ -16,14 +16,14 @@ import java.util.concurrent.TimeUnit;
 
 public class Login {
     private WebDriver driver;
-//    private WebDriverWait wait; // explicitly wait
+    private WebDriverWait wait; // explicitly wait
     FluentWait<WebDriver> fluentWait;
     @BeforeMethod
     public void startTest() {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver = new ChromeDriver();
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver,10);
         fluentWait = new FluentWait<>(driver)
                 .pollingEvery(Duration.ofMillis(100))
                 .withTimeout(Duration.ofSeconds(10))
@@ -57,6 +57,22 @@ public class Login {
         WebElement logoutButton = driver.findElement(By.cssSelector("a.logout"));
         Assert.assertTrue(logoutButton.isDisplayed());
 
+    }
+    @Test
+    public void loginKoel_WrongCredentials_RedFrame() {
+        driver.get("https://koelapp.testpro.io");
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[type=email]")));
+        WebElement emailField = driver.findElement(By.cssSelector("input[type=email]"));
+        WebElement passwordField = driver.findElement(By.cssSelector("input[type=password]"));
+        WebElement loginButton = driver.findElement(By.cssSelector("button"));
+
+        emailField.sendKeys("muratj.tm@gmail.com");
+        passwordField.sendKeys("qwerty");
+        loginButton.click();
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".error")));
+        WebElement redFrame = driver.findElement(By.cssSelector(".error"));
+        Assert.assertTrue(redFrame.isDisplayed());
     }
 }
