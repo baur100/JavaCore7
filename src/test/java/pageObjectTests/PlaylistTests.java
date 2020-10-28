@@ -11,7 +11,7 @@ public class PlaylistTests extends BaseTest{
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
-        String playlistId = mainPage.createPlaylist("testPlaylist");
+        String playlistId = mainPage.createPlaylist("testPlaylist1");
         boolean isCreated = mainPage.isPlaylistExist(playlistId);
 
         Assert.assertTrue(isCreated);

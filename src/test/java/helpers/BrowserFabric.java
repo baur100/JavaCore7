@@ -16,17 +16,17 @@ public class BrowserFabric {
     }
 
     private static WebDriver getFirefoxDriver() {
-        System.setProperty("webdriver.gecko.driver","geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","geckodriver");
         return new FirefoxDriver();
     }
 
     private static WebDriver getEdgeDriver() {
-        System.setProperty("webdriver.edge.driver","msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver","msedgedriver");
         return new EdgeDriver();
     }
 
     private static WebDriver getChromeDriver() {
-        System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","chromedriver");
         return new ChromeDriver();
     }
 }
