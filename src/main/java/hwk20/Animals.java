@@ -1,5 +1,5 @@
 package hwk20;
 
-public interface Animals extends Vertebrates, Invertebrates{
-    public void animal();
+public interface Animals extends Life{
+    void animal();
 }

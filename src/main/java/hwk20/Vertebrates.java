@@ -1,6 +1,5 @@
 package hwk20;
 
-public interface Vertebrates extends Reptilies, Fish, Amphibians, Birds, Mammals
-{
-    public void nameVertebrates();
+public interface Vertebrates extends Animals{
+    void Vertebrates();
 }

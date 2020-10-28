@@ -1,5 +1,5 @@
 package hwk20;
 
-public interface Plants {
-    public void getPlants();
+public interface Plants extends Life{
+    void Plants();
 }

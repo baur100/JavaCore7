@@ -1,5 +1,5 @@
 package hwk20;
 
-public interface Fish {
-    public void fish();
+public interface Fish extends Vertebrates{
+    void fish();
 }

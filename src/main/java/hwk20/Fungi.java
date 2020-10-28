@@ -1,5 +1,5 @@
 package hwk20;
 
-public interface Fungi {
-    public void fungi();
+public interface Fungi extends Life {
+    void fungi();
 }

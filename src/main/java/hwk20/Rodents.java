@@ -1,5 +1,13 @@
 package hwk20;
 
 public abstract class Rodents {
-    public void rodents(){};
+    String nameRodent;
+
+    public Rodents(String nameRodent) {
+        this.nameRodent = nameRodent;
+    }
+
+    public void Rodent(){
+        System.out.println("I am a Rodent");
+    }
 }

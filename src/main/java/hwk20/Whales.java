@@ -1,16 +1,13 @@
 package hwk20;
 
 public abstract class Whales {
-    private String whales;
+    private String nameWhales;
 
-    public Whales(String whales) {
-        this.whales = whales;
+    public Whales(String nameWhales) {
+        this.nameWhales = nameWhales;
     }
 
-    @Override
-    public String toString() {
-        return "Whales{" +
-                "whales='" + whales + '\'' +
-                '}';
+    public void Whales(){
+        System.out.println("I am a whale");
     }
 }

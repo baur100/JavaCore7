@@ -1,8 +1,7 @@
 package hwk20;
 
-public class Lion extends Carnivores{
-
-    public Lion(String nameCarnivores) {
+public class BlueWhale extends Carnivores{
+    public BlueWhale(String nameCarnivores) {
         super(nameCarnivores);
     }
 
@@ -23,7 +22,8 @@ public class Lion extends Carnivores{
 
     @Override
     public void canBreath() {
-        System.out.println("I can breath!!!!");
+        System.out.println("I breath becuase I am a " + nameCarnivores);
+
     }
 
     @Override

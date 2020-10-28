@@ -1,5 +1,5 @@
 package hwk20;
 
-public interface Mammals {
-    public void mammals();
+public interface Mammals extends Vertebrates {
+    void mammals();
 }
