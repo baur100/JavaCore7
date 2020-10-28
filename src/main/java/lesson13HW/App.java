@@ -6,10 +6,10 @@ public class App {
 
     public static void main (String [] args){
 
-        LocalCurrency myCurrency = new LocalCurrency(Countries.USA, CapitalCity.values());
-        myCurrency.setCapitalCity(CapitalCity.values());
-        myCurrency.PrintEverything();
-        myCurrency.setCountries(Countries.USA);
+
+    CountryCapital myCapital = new CountryCapital(Countries.Chile, CapitalCity.values());
+    myCapital.printToString();
+
 
     }
 }

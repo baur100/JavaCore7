@@ -4,6 +4,7 @@ public enum CapitalCity {
     Vilnius,
     Santiago,
     Shanghai,
+    Toronto,
     Prague,
     Quito,
     Tokyo,
