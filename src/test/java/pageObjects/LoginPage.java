@@ -1,18 +1,18 @@
 package pageObjects;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class LoginPage {
-    private WebDriver driver;
-
+public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void open() {
         driver.get("https://koelapp.testpro.io");
     }
     private WebElement getEmailField() {
+        explicitWait("input[type=email]");
         return driver.findElement(By.cssSelector("input[type=email]"));
     }
     private WebElement getPasswordField() {
@@ -22,6 +22,7 @@ public class LoginPage {
         return driver.findElement(By.cssSelector("button"));
     }
     private WebElement getErrorFrame() {
+        explicitWait("form.error");
         return driver.findElement(By.cssSelector("form.error"));
     }
 
