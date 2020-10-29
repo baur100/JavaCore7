@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
-public class PlaylistTests extends BaseTests{
+public class PlaylistTestsA extends BaseTests{
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated() {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
@@ -20,7 +20,7 @@ public class PlaylistTests extends BaseTests{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed(){
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -33,7 +33,7 @@ public class PlaylistTests extends BaseTests{
         Assert.assertTrue(isExist);
     }
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated1() {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated1() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -45,7 +45,7 @@ public class PlaylistTests extends BaseTests{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed1(){
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed1(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -58,7 +58,7 @@ public class PlaylistTests extends BaseTests{
         Assert.assertTrue(isExist);
     }
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated2() {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated2() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -70,7 +70,7 @@ public class PlaylistTests extends BaseTests{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed2(){
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed2(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
