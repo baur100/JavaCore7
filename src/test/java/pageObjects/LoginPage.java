@@ -1,5 +1,6 @@
 package pageObjects;
 
+import again.Main;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,11 +31,11 @@ public class LoginPage extends BasePage{
         driver.get("https://koelapp.testpro.io/");
     }
 
-    public MainPage login(String email, String password){
+    public Mai login(String email, String password){
         getEmailField().sendKeys(email);
         getPasswordField().sendKeys(password);
         getLoginButton().click();
-        return new MainPage(driver);
+        return new Main(driver);
     }
     public boolean isError() {
         return getErrorFrame().isDisplayed();

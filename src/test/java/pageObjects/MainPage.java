@@ -7,6 +7,9 @@ public class MainPage extends BasePage{
     public MainPage(WebDriver driver) {
         super(driver);
     }
+
+
+
     private WebElement getLogoutButton() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".fa.fa-sign-out.control")));
         return driver.findElement(By.cssSelector(".fa.fa-sign-out.control"));
@@ -38,4 +41,5 @@ public class MainPage extends BasePage{
         js.executeScript("arguments[0].scrollIntoView();", playlist);
         return playlist.isDisplayed();
     }
+
 }
