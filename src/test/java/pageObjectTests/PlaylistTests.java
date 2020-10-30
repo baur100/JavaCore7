@@ -20,15 +20,19 @@ public class PlaylistTests extends BaseTest{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed(){
+    public void playlistTest_RenamePlaylist_PlaylistRenamed() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         String newName = TestData.randomString(10);
+        Thread.sleep(2000);
         mainPage.renamePlaylist(playlistId,newName);
+        Thread.sleep(2000);
         boolean isExist = mainPage.isPlaylistExist(playlistId, newName);
+
+        Thread.sleep(5000);
 
         Assert.assertTrue(isExist);
     }

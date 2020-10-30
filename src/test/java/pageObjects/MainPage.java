@@ -48,7 +48,9 @@ public class MainPage extends BasePage{
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement playlist = driver.findElement(By.xpath("//*[@href='#!/playlist/"+playlistId+"']"));
         js.executeScript("arguments[0].scrollIntoView();", playlist);
-        return playlist.isDisplayed() && playlist.getText().equals(playlistName);
+        System.out.println(playlist.getText());
+        System.out.println(playlistName);
+        return playlist.getText().equals(playlistName);
     }
 
     public void renamePlaylist(String playlistId, String newName) {
@@ -57,7 +59,7 @@ public class MainPage extends BasePage{
         js.executeScript("arguments[0].scrollIntoView();", playlist);
         Actions actions = new Actions(driver);
         actions.doubleClick(playlist).perform();
-        getPlaylistEditField().sendKeys(Keys.CONTROL+"a");
+        getPlaylistEditField().sendKeys(Keys.COMMAND+"a");
         getPlaylistEditField().sendKeys(newName);
         getPlaylistEditField().sendKeys(Keys.RETURN);
     }
