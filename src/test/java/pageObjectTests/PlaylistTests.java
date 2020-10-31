@@ -19,11 +19,11 @@ public class PlaylistTests extends BaseTest{
         Assert.assertTrue(isCreated);
     }
 
-    @Test
+    @Test(enabled=false)
     public void playlistTest_RenamePlaylist_PlaylistRenamed(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         String newName = TestData.randomString(10);
@@ -36,7 +36,7 @@ public class PlaylistTests extends BaseTest{
     public void playlistTest_CreatePlaylist_PlaylistCreated1() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         boolean isCreated = mainPage.isPlaylistExist(playlistId, playlistName);
@@ -48,7 +48,7 @@ public class PlaylistTests extends BaseTest{
     public void playlistTest_RenamePlaylist_PlaylistRenamed1(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         String newName = TestData.randomString(10);
@@ -61,7 +61,7 @@ public class PlaylistTests extends BaseTest{
     public void playlistTest_CreatePlaylist_PlaylistCreated2() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         boolean isCreated = mainPage.isPlaylistExist(playlistId, playlistName);
@@ -73,7 +73,7 @@ public class PlaylistTests extends BaseTest{
     public void playlistTest_RenamePlaylist_PlaylistRenamed2(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         String newName = TestData.randomString(10);
