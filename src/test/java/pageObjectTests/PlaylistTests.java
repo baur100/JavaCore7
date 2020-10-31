@@ -19,7 +19,7 @@ public class PlaylistTests extends BaseTest{
         Assert.assertTrue(isCreated);
     }
 
-    @Test(enabled=false)
+    @Test(enabled=true)
     public void playlistTest_RenamePlaylist_PlaylistRenamed(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
