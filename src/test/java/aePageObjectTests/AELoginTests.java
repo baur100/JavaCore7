@@ -15,13 +15,14 @@ import java.time.Duration;
 
 public class AELoginTests extends AEBaseTest{
     int count=0;
-    @Test (retryAnalyzer = RetryAnalyzer.class)
+    //@Test (retryAnalyzer = RetryAnalyzer.class)
+    @Test
     public void loginToKoel_CorrectCredentials_SuccessfulLogin(){
         AELoginPage loginPage = new AELoginPage(driver);
         loginPage.open();
         AEMainPage mainPage = loginPage.login(username,password);
         Assert.assertTrue(mainPage.isMainPage());
-        Assert.assertEquals(count++,2);
+        //Assert.assertEquals(count++,2);
     }
     @Test
     public void loginToKoel_IncorrectCredentials_ErrorFrame(){

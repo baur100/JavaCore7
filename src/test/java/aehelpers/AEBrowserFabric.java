@@ -31,7 +31,7 @@ public class AEBrowserFabric {
 
     private static WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         return new ChromeDriver(options);
     }

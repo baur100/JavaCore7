@@ -7,19 +7,12 @@
 
 
     <parameter name="email" value= "koeluser06@testpro.io"></parameter>
-    <parameter name="password" value="te$t$tudent"></parameter>
+    <parameter name="password" value="te$t$tudentrr"></parameter>
     <test name="All Tests">
         <classes>
             <class name="aePageObjectTests.AELoginTests">
                 <methods>
                     <include name="loginToKoel_CorrectCredentials_SuccessfulLogin"/>
-                    <include name="loginToKoel_IncorrectCredentials_ErrorFrame"/>
-                </methods>
-            </class>
-            <class name="aePageObjectTests.AEPlaylistTests">
-                <methods>
-                    <include name="playListTest_CreatePlaylist_PlaylistCreated"/>
-                    <include name="playListTest_RenamePlaylist_PlaylistRenamed()"/>
                 </methods>
             </class>
         </classes>
