@@ -1,5 +1,6 @@
 package aePageObjectTests;
 
+import aeListeners.RetryAnalyzer;
 import aePageObjects.AELoginPage;
 import aePageObjects.AEMainPage;
 import org.openqa.selenium.WebDriver;
@@ -13,18 +14,20 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 
 public class AELoginTests extends AEBaseTest{
-    @Test
+    int count=0;
+    @Test (retryAnalyzer = RetryAnalyzer.class)
     public void loginToKoel_CorrectCredentials_SuccessfulLogin(){
         AELoginPage loginPage = new AELoginPage(driver);
         loginPage.open();
-        AEMainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        AEMainPage mainPage = loginPage.login(username,password);
         Assert.assertTrue(mainPage.isMainPage());
+        Assert.assertEquals(count++,2);
     }
     @Test
     public void loginToKoel_IncorrectCredentials_ErrorFrame(){
         AELoginPage loginPage = new AELoginPage(driver);
         loginPage.open();
-        loginPage.login("koeluser06@testpro.io", "wrongpassword");
+        loginPage.login(username, wrongPassword);
         Assert.assertTrue(loginPage.isError());
     }
 

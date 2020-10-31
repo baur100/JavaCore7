@@ -12,7 +12,7 @@ public class AEPlaylistTests extends AEBaseTest{
     public void playListTest_CreatePlaylist_PlaylistCreated() throws InterruptedException {
         AELoginPage loginPage = new AELoginPage(driver);
         loginPage.open();
-        AEMainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        AEMainPage mainPage = loginPage.login(username,password);
         String playListName = AETestData.randomString(10);
         String playListId = mainPage.createPlaylist(playListName);
 //        String playListId = mainPage.createPlaylist("testPaylistae");
@@ -24,7 +24,7 @@ public class AEPlaylistTests extends AEBaseTest{
     public void playListTest_RenamePlaylist_PlaylistRenamed() throws InterruptedException {
         AELoginPage loginPage = new AELoginPage(driver);
         loginPage.open();
-        AEMainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        AEMainPage mainPage = loginPage.login(username,password);
         String playListName = AETestData.randomString(10);
         String playListId = mainPage.createPlaylist(playListName);
         String newName = AETestData.randomString(10);
