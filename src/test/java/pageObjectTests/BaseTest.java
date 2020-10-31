@@ -19,7 +19,7 @@ public class BaseTest {
         username = login;
         this.password = password;
         wrongPassword = "wrongPassword";
-        driver = BrowserFabric.getDriver(BrowserType.FIREFOX);
+        driver = BrowserFabric.getDriver(BrowserType.CHROME);
     }
     @AfterMethod
     public void tearDown(){
