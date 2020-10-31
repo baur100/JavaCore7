@@ -11,13 +11,13 @@ public class BaseTest {
 
     @BeforeMethod
     public void startApp() {
-        driver = BrowserFabric.getDriver(Browser.EDGE);
+        driver = BrowserFabric.getDriver(Browser.CHROME);
 
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
     }
     @AfterMethod
     public void stopApp() throws InterruptedException {
-        Thread.sleep(2000);
+//        Thread.sleep(2000);
         driver.close();
     }
 }
