@@ -23,7 +23,6 @@ public class MainPage extends BasePage{
 //        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='fa fa-plus-circle control create']")));
 //        fluentWait.until(x->x.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")));
 
-
         for (int i = 0;i<50; i++){
             try{
                 driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")).click();
