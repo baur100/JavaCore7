@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite" parallel="classes" thread-count="2">
+    <test name="All Tests">
+        <classes>
+            <class name="pageObjectsTests.LoginTests">
+                <methods>
+                    <include name="loginTest_CorrectCredentials_SuccessfullyLogin"/>
+                    <include name="loginTest_WrongCredentials_RedFrame"/>
+                </methods>
+            </class>
+            <class name="pageObjectsTests.PlaylistTests">
+                <methods>
+                    <include name="playlistTest_CreatePlaylist_PlaylistCreated"/>
+                    <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

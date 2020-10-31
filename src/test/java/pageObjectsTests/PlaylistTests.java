@@ -1,13 +1,13 @@
-package pageObjectsTest;
+package pageObjectsTests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
-public class PlaylistTest extends BaseTest {
+public class PlaylistTests extends BaseTest {
     @Test
-    public void playlist_CreatePlaylist_PlaylistCreated() {
+    public void playlistTest_CreatePlaylist_PlaylistCreated() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login("muratj.tm@gmail.com", "te$t$tudent");
@@ -15,14 +15,14 @@ public class PlaylistTest extends BaseTest {
         Assert.assertTrue(isCreated);
     }
     @Test
-    public void playlist_RenamePlaylist_RenamedPlaylist() {
+    public void playlistTest_RenamePlaylist_RenamedPlaylist() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login("muratj.tm@gmail.com", "te$t$tudent");
-        String playlistName = "TestNameForPlaylist";
-        String newName = "test8";
+        String playlistName = "test10";
+        String newName = "test14";
         String renamedPlaylist = mainPage.renamePlaylist(playlistName, newName);
 
-        Assert.assertTrue(renamedPlaylist.equals(newName));
+        Assert.assertEquals(newName, renamedPlaylist);
     }
 }

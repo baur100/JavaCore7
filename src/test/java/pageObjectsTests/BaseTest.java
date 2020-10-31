@@ -1,4 +1,4 @@
-package pageObjectsTest;
+package pageObjectsTests;
 
 import helpers.BrowserFabric;
 import helpers.Browser;
@@ -17,7 +17,7 @@ public class BaseTest {
     }
     @AfterMethod
     public void stopApp() throws InterruptedException {
-//        Thread.sleep(2000);
+//        Thread.sleep(500);
         driver.close();
     }
 }

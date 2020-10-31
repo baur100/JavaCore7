@@ -19,7 +19,7 @@ public class MainPage extends BasePage {
         return driver.findElement(By.cssSelector("a.logout"));
     }
     private WebElement getCreatePlaylistButton() {
-        clickableWait("#playlists i.create");
+        explicitWait("#playlists i.create");
         return driver.findElement(By.cssSelector("#playlists i.create"));
     }
     private WebElement getCreatePlaylistInput() {
