@@ -18,6 +18,17 @@ public class TicketTest {
     }
 
     @Test
+    public void ticket_ageInfant_priceIsZero1(){
+        // Arrange - given
+        Ticket infant = new Ticket(1000,1);
+
+        // Act - when
+        double price = infant.getPrice();
+
+        // Assert - then
+        Assert.assertEquals(price,0.0);
+    }
+    @Test
     public void ticket_ageChild_priceIs50percent(){
         // Arrange
         Ticket child = new Ticket(1000,5);
