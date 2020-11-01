@@ -10,14 +10,14 @@ public class LoginTests extends BaseTest {
     public void loginTest_CorrectCredentials_SuccessfullyLogin() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("muratj.tm@gmail.com","te$t$tudent");
+        MainPage mainPage = loginPage.login(username, password);
         Assert.assertTrue(mainPage.isMainPage());
     }
-    @Test
+    @Test(enabled = false)
     public void loginTest_WrongCredentials_RedFrame() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        loginPage.login("wrong@email.com", "wrongPassword");
+        loginPage.login(username, "wrongPassword");
         Assert.assertTrue(loginPage.isError());
     }
 }

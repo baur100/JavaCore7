@@ -8,15 +8,15 @@
             <class name="pageObjectsTests.LoginTests">
                 <methods>
                     <include name="loginTest_CorrectCredentials_SuccessfullyLogin"/>
-                    <include name="loginTest_WrongCredentials_RedFrame"/>
+<!--                    <include name="loginTest_WrongCredentials_RedFrame"/>-->
                 </methods>
             </class>
-            <class name="pageObjectsTests.PlaylistTests">
-                <methods>
-                    <exclude name="playlistTest_CreatePlaylist_PlaylistCreated"/>
-                    <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>
-                </methods>
-            </class>
+<!--            <class name="pageObjectsTests.PlaylistTests">-->
+<!--                <methods>-->
+<!--                    <include name="playlistTest_CreatePlaylist_PlaylistCreated"/>-->
+<!--                    <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

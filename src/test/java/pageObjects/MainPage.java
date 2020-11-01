@@ -1,9 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
@@ -18,12 +15,17 @@ public class MainPage extends BasePage {
         explicitWait("a.logout");
         return driver.findElement(By.cssSelector("a.logout"));
     }
-    private WebElement getCreatePlaylistButton() {
-        explicitWait("#playlists i.create");
-        return driver.findElement(By.cssSelector("#playlists i.create"));
+    private void clickCreatePlaylistButton() {
+        clickableWait("#playlists i.create");
+        for (int i = 0;i<50; i++){
+            try{
+                driver.findElement(By.cssSelector("#playlists i.create")).click();
+                return;
+            } catch (ElementClickInterceptedException ignoring){}
+        }
     }
     private WebElement getCreatePlaylistInput() {
-        explicitWait(".create input");
+        clickableWait(".create input");
         return driver.findElement(By.cssSelector(".create input"));
     }
     private String getPlaylistId(WebElement playlist) {
@@ -50,7 +52,7 @@ public class MainPage extends BasePage {
     }
 
     public boolean createPlaylist(String playlistName) {
-        getCreatePlaylistButton().click();
+        clickCreatePlaylistButton();
         getCreatePlaylistInput().sendKeys(playlistName);
         getCreatePlaylistInput().sendKeys(Keys.ENTER);
 
