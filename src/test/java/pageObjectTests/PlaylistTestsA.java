@@ -6,12 +6,12 @@ import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
-public class PlaylistTests extends BaseTest{
+public class PlaylistTestsA extends BaseTest{
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated() throws InterruptedException {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
-        MainPage mainPage = loginPage.login("koeluser06@testpro.io","te$t$tudent");
+        MainPage mainPage = loginPage.login(username,password);
         String playlistName = TestData.randomString(10);
         String playlistId = mainPage.createPlaylist(playlistName);
         boolean isCreated = mainPage.isPlaylistExist(playlistId, playlistName);
@@ -19,8 +19,8 @@ public class PlaylistTests extends BaseTest{
         Assert.assertTrue(isCreated);
     }
 
-    @Test(enabled=false)
-    public void playlistTest_RenamePlaylist_PlaylistRenamed(){
+    @Test
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -33,7 +33,7 @@ public class PlaylistTests extends BaseTest{
         Assert.assertTrue(isExist);
     }
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated1() throws InterruptedException {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated1() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -45,7 +45,7 @@ public class PlaylistTests extends BaseTest{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed1(){
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed1(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -58,7 +58,7 @@ public class PlaylistTests extends BaseTest{
         Assert.assertTrue(isExist);
     }
     @Test
-    public void playlistTest_CreatePlaylist_PlaylistCreated2() throws InterruptedException {
+    public void playlistTestA_CreatePlaylist_PlaylistCreated2() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
@@ -70,7 +70,7 @@ public class PlaylistTests extends BaseTest{
     }
 
     @Test
-    public void playlistTest_RenamePlaylist_PlaylistRenamed2(){
+    public void playlistTestA_RenamePlaylist_PlaylistRenamed2(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);
