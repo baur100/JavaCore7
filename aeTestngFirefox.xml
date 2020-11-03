@@ -8,6 +8,7 @@
 
     <parameter name="email" value= "koeluser06@testpro.io"></parameter>
     <parameter name="password" value="te$t$tudent"></parameter>
+    <parameter name="browser" value="FIREFOX"></parameter>
     <test name="All Tests">
         <classes>
             <class name="aePageObjectTests.AELoginTests">
