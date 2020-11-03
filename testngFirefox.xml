@@ -7,6 +7,7 @@
 
     <parameter name="email" value="koeluser06@testpro.io"/>
     <parameter name="password" value="te$t$tudent"/>
+    <parameter name="browser" value="FIREFOX"/>
     <test name="All Tests">
         <classes>
             <class name="pageObjectTests.LoginTests">

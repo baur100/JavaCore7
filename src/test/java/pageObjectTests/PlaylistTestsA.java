@@ -1,14 +1,15 @@
 package pageObjectTests;
 
 import helpers.TestData;
+import listeners.RetryAnalyzer;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.MainPage;
 
 public class PlaylistTestsA extends BaseTest{
-    @Test
-    public void playlistTestA_CreatePlaylist_PlaylistCreated() throws InterruptedException {
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void playlistTestA_CreatePlaylist_PlaylistCreated() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();
         MainPage mainPage = loginPage.login(username,password);

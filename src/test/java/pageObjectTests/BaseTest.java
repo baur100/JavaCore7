@@ -18,13 +18,14 @@ public class BaseTest {
     protected String password;
     protected String wrongPassword;
 
-    @Parameters({"email","password"})
+    @Parameters({"email","password","browser"})
     @BeforeMethod
-    public void startUp(String login, String password){
+    public void startUp(String login, String password,String browser){
         username = login;
         this.password = password;
         wrongPassword = "wrongPassword";
-        driver = BrowserFabric.getDriver(BrowserType.FIREFOX);
+        BrowserType browserType = browser.equals("CHROME") ? BrowserType.CHROME : BrowserType.FIREFOX;
+        driver = BrowserFabric.getDriver(browserType);
     }
     @AfterMethod
     public void tearDown(ITestResult iTestResult){

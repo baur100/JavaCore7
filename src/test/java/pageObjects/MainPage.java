@@ -27,7 +27,7 @@ public class MainPage extends BasePage{
             try{
                 driver.findElement(By.xpath("//*[@class='fa fa-plus-circle control create']")).click();
                 return;
-            } catch (ElementClickInterceptedException ignoring){
+            } catch (ElementClickInterceptedException | NoSuchElementException ignoring){
                 logger.error("Button not found attempt "+i);
             }
         }
