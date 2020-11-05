@@ -10,8 +10,8 @@ public class App1 {
         //With proxy variable
 
         int c = a;
-        //int a == b;
-        //int b = c;
+        a = b;
+        b = c;
         System.out.println("a= "+a + "; b= " +b);
 
         //Without using another variable
