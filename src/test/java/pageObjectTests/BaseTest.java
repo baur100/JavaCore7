@@ -28,7 +28,7 @@ public class BaseTest {
         driver = BrowserFabric.getDriver(browserType);
     }
     @AfterMethod
-    public void tearDown(ITestResult iTestResult){
+    public void tearDown(ITestResult iTestResult) {
 
         if(iTestResult.getStatus()==iTestResult.FAILURE){
             Date date = new Date();
