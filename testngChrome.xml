@@ -6,6 +6,7 @@
     </listeners>
     <parameter name="email" value="muratj.tm@gmail.com"/>
     <parameter name="password" value="te$t$tudent"/>
+    <parameter name="browser" value="CHROME"/>
     <test name="All Tests">
         <classes>
             <class name="pageObjectsTests.LoginTests">

@@ -4,6 +4,7 @@ import helpers.BrowserFabric;
 import helpers.Browser;
 import helpers.Screenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,10 +19,11 @@ public class BaseTest {
     protected String username;
     protected String password;
 
-    @Parameters({"email", "password"})
+    @Parameters({"email", "password", "browser"})
     @BeforeMethod
-    public void startApp(String username, String password) {
-        driver = BrowserFabric.getDriver(Browser.CHROME);
+    public void startApp(String username, String password, String browser) {
+        Browser browserType = browser.equals("CHROME") ? Browser.CHROME : Browser.FIREFOX;
+        driver = BrowserFabric.getDriver(browserType);
         this.username = username;
         this.password = password;
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
