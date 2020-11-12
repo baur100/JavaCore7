@@ -1,13 +1,17 @@
 package pageObjects;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
 public class MainPage extends BasePage {
+    Logger logger = LogManager.getLogger(MainPage.class);
     public MainPage(WebDriver driver) {
         super(driver);
+        logger.debug("Main page created");
     }
 
     // element getters
@@ -20,6 +24,7 @@ public class MainPage extends BasePage {
         for (int i = 0;i<50; i++){
             try{
                 driver.findElement(By.cssSelector("#playlists i.create")).click();
+                logger.debug("button createPlaylist clicked");
                 return;
             } catch (ElementClickInterceptedException ignoring){}
         }

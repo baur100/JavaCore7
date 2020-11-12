@@ -5,21 +5,21 @@
         <listener class-name="listeners.Listeners"/>
     </listeners>
     <parameter name="email" value="muratj.tm@gmail.com"/>
-    <parameter name="password" value="te$t$tudent=="/>
+    <parameter name="password" value="te$t$tudent"/>
     <test name="All Tests">
         <classes>
-            <class name="pageObjectsTests.LoginTests">
-                <methods>
-                    <include name="loginTest_CorrectCredentials_SuccessfullyLogin"/>
-<!--                    <include name="loginTest_WrongCredentials_RedFrame"/>-->
-                </methods>
-            </class>
-<!--            <class name="pageObjectsTests.PlaylistTests">-->
+<!--            <class name="pageObjectsTests.LoginTests">-->
 <!--                <methods>-->
-<!--                    <include name="playlistTest_CreatePlaylist_PlaylistCreated"/>-->
-<!--                    <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>-->
+<!--                    <include name="loginTest_CorrectCredentials_SuccessfullyLogin"/>-->
+<!--                    <include name="loginTest_WrongCredentials_RedFrame"/>-->
 <!--                </methods>-->
 <!--            </class>-->
+            <class name="pageObjectsTests.PlaylistTests">
+                <methods>
+                    <include name="playlistTest_CreatePlaylist_PlaylistCreated"/>
+<!--                    <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>-->
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

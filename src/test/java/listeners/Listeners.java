@@ -1,12 +1,17 @@
 package listeners;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import pageObjects.BasePage;
 
 public class Listeners implements ITestListener {
+    private static Logger logger = LogManager.getLogger(BasePage.class);
     @Override
     public void onTestStart(ITestResult iTestResult) {
+        logger.info("Test: " + iTestResult.getName() + " started");
         System.out.println(iTestResult.getName());
     }
 
