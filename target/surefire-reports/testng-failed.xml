@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Master Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="password" value="te$t$tudent"/>
+  <parameter name="browser" value="FIREFOX"/>
+  <parameter name="email" value="muratj.tm@gmail.com"/>
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+  <test thread-count="2" parallel="classes" name="All Tests(failed)" verbose="0">
+    <classes>
+      <class name="pageObjectsTests.PlaylistTests">
+        <methods>
+          <include name="playlistTest_RenamePlaylist_RenamedPlaylist"/>
+          <include name="startApp"/>
+          <include name="stopApp"/>
+        </methods>
+      </class> <!-- pageObjectsTests.PlaylistTests -->
+    </classes>
+  </test> <!-- All Tests(failed) -->
+</suite> <!-- Failed suite [Master Suite] -->

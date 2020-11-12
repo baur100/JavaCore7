@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.726 s <<< FAILURE! - in TestSuite
+playlistTest_RenamePlaylist_RenamedPlaylist(pageObjectsTests.PlaylistTests)  Time elapsed: 6.499 s  <<< FAILURE!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+(128, 1031) is out of bounds of viewport width (1400) and height (926)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Murats-Air.home', ip: 'fd4b:8d38:69ba:1:5d1a:cd94:dbbd:be4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201027185343, moz:geckodriverVersion: 0.27.0, moz:headless: true, moz:processID: 5617, moz:profile: /var/folders/56/yymvc2y933n..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.6.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f8924c2-59a2-9e41-90b3-a3d3e083a10b
+	at pageObjectsTests.PlaylistTests.playlistTest_RenamePlaylist_RenamedPlaylist(PlaylistTests.java:26)
+
