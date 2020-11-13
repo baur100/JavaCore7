@@ -1,5 +1,7 @@
 package enums;
 
 public enum PetStatus {
-    av
+    available,
+    pending,
+    sold
 }
