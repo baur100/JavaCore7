@@ -29,7 +29,7 @@ public class apiGetPet {
 
         PetResponse petResponse = jsonPath.getObject("$", PetResponse.class);
         Assert.assertEquals(petResponse.getName(),"Lessi");
-        Assert.assertEquals(PetStatus.available,petResponse.getStatus());
+        Assert.assertEquals(PetStatus.sold,petResponse.getStatus());
 //        String petName = jsonPath.getString("name");
 //        Assert.assertEquals(petName,"Lessi");
         Assert.assertEquals("dogs",petResponse.getCategory().getName());
