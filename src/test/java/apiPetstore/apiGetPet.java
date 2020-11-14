@@ -1,14 +1,10 @@
 package apiPetstore;
 
-import com.github.javafaker.Faker;
-import enums.PetStatus;
 import helpers.TestData;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import models.Category;
 import models.PetRequest;
 import models.PetResponse;
-import models.Tag;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -86,5 +82,4 @@ public class apiGetPet {
         PetResponse petResponse = jsonPath.getObject("$", PetResponse.class);
         Assert.assertEquals(updatedPet.getName(),petResponse.getName());
     }
-
 }

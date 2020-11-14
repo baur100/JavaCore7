@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import enums.PetStatus;
 import models.Category;
 import models.PetRequest;
+import models.PlaylistCreateRequest;
 import models.Tag;
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -29,6 +30,10 @@ public class TestData {
         PetStatus status = PetStatus.available;
 
         return new PetRequest(0,category,name,photoUrl,tags,status);
+    }
 
+    public static PlaylistCreateRequest getPlaylistWithRandomName(){
+        Faker faker = new Faker();
+        return new PlaylistCreateRequest(faker.music().instrument());
     }
 }
