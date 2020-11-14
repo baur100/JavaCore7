@@ -2,6 +2,8 @@ package models;
 
 import enums.PetStatus;
 
+import java.util.Arrays;
+
 public class PetRequest {
     private long id;
     private Category category;
@@ -17,5 +19,33 @@ public class PetRequest {
         this.photoUrls = photoUrls;
         this.tags = tags;
         this.status = status;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String[] getPhotoUrls() {
+        return photoUrls;
+    }
+
+    public Tag[] getTags() {
+        return tags;
+    }
+
+    public PetStatus getStatus() {
+        return status;
     }
 }
