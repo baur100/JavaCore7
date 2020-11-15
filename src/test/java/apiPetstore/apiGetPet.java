@@ -34,13 +34,12 @@ public class apiGetPet {
     public void deletePet() {
         given().baseUri("https://petstore.swagger.io/v2").basePath("/pet/" + petId)
                 .when().delete()
-                .then().statusCode(200);
+                .then();
 
         System.out.println("Pet with id: " + petId + " was deleted successfully");
     }
     @Test
     public void getPetReturnedById_petReturned() {
-        System.out.println(petId);
         Response response =
                 given().baseUri("https://petstore.swagger.io/v2").basePath("/pet/" + petId)
                         .when().get()
