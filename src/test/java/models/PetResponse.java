@@ -3,14 +3,14 @@ package models;
 import helpers.PetStatus;
 
 public class PetResponse {
-    private int id;
+    private long id;
     private Category category;
     private String name;
     private String[] photoUrls;
     private Tag[] tags;
     private PetStatus status;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
     public Category getCategory() {
