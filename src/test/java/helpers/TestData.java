@@ -34,6 +34,6 @@ public class TestData {
 
     public static PlaylistCreateRequest getPlaylistWithRandomName(){
         Faker faker = new Faker();
-        return new PlaylistCreateRequest(faker.music().instrument());
+        return new PlaylistCreateRequest(faker.artist().name());
     }
 }
