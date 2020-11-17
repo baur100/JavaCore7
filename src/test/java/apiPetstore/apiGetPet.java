@@ -15,12 +15,13 @@ import static io.restassured.RestAssured.given;
 public class apiGetPet {
     private long petId;
     private PetRequest petRequest;
+    private String url = "https://petstore.swagger.io/v2";
 
     @BeforeMethod
     public void createPet() {
         petRequest = TestData.randomPetData();
 
-        Response response = given().baseUri("https://petstore.swagger.io/v2").basePath("/pet")
+        Response response = given().baseUri(url).basePath("/pet")
                 .header("Content-Type", "application/json").body(petRequest)
                 .when().post()
                 .then().statusCode(200)
@@ -32,16 +33,16 @@ public class apiGetPet {
     }
     @AfterMethod
     public void deletePet() {
-        given().baseUri("https://petstore.swagger.io/v2").basePath("/pet/" + petId)
+        given().baseUri(url).basePath("/pet/" + petId)
                 .when().delete()
                 .then();
 
         System.out.println("Pet with id: " + petId + " was deleted successfully");
     }
     @Test
-    public void getPetReturnedById_petReturned() {
+    public void petById_petReturned() {
         Response response =
-                given().baseUri("https://petstore.swagger.io/v2").basePath("/pet/" + petId)
+                given().baseUri(url).basePath("/pet/" + petId)
                         .when().get()
                         .then().statusCode(200)
                         .extract().response();
@@ -58,7 +59,7 @@ public class apiGetPet {
         petUpdate.setId(petId);
 
         Response response =
-                given().baseUri("https://petstore.swagger.io/v2").basePath("/pet")
+                given().baseUri(url).basePath("/pet")
                         .header("Content-Type","application/json")
                         .body(petUpdate)
                         .when().put()

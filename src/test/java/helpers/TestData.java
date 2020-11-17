@@ -3,6 +3,7 @@ package helpers;
 import com.github.javafaker.Faker;
 import models.Category;
 import models.PetRequest;
+import models.PlaylistCreateReq;
 import models.Tag;
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -31,5 +32,10 @@ public class TestData {
                 photoUrl,
                 new Tag[]{},
                 PetStatus.pending);
+    }
+
+    public static PlaylistCreateReq randomPlaylistName() {
+        Faker faker = new Faker();
+        return new PlaylistCreateReq(faker.music().genre());
     }
 }
