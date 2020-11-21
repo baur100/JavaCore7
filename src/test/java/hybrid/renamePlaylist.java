@@ -2,6 +2,7 @@ package hybrid;
 
 import com.github.javafaker.Faker;
 import enums.BrowserType;
+import helpers.ApiHelper;
 import helpers.BrowserFabric;
 import helpers.TestData;
 import helpers.Token;
@@ -60,11 +61,7 @@ public class renamePlaylist {
     @AfterMethod
     public void tearDown(){
         driver.quit();
-        given()
-                .baseUri("https://koelapp.testpro.io/")
-                .basePath("api/playlist/"+playlistId)
-                .header("Authorization",token)
-                .delete();
+        ApiHelper.deletePlaylist(playlistId,token);
     }
     @Test
     public void renamePlaylist_PlaylistRenamed(){
