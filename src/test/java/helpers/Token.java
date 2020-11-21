@@ -28,7 +28,7 @@ public class Token {
         JsonPath jsonPath = response.jsonPath();
         return "Bearer "+jsonPath.getString("token");
     }
-    public static Map<String,String> getCookies(){
+    public static String getCookies(){
         Credentials credentials = new Credentials("koeluser06@testpro.io","te$t$tudent");
         Response response =
                 given()
@@ -42,6 +42,7 @@ public class Token {
                         .statusCode(200)
                         .extract()
                         .response();
-        return response.getCookies();
+        JsonPath jsonPath = response.jsonPath();
+        return "Bearer "+jsonPath.getString("token");
     }
 }
