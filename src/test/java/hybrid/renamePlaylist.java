@@ -10,6 +10,8 @@ import io.restassured.response.Response;
 import models.PlaylistCreateResponse;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.html5.LocalStorage;
+import org.openqa.selenium.html5.WebStorage;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -79,22 +81,23 @@ public class renamePlaylist {
     }
     @Test
     public void testLoginlessLogin(){
-        // get a calendar instance, which defaults to "now"
-        Calendar calendar = Calendar.getInstance();
+//        // get a calendar instance, which defaults to "now"
+//        Calendar calendar = Calendar.getInstance();
+//
+//        // get a date to represent "today"
+//        Date today = calendar.getTime();
+//        System.out.println("today:    " + today);
+//
+//        // add one day to the date/calendar
+//        calendar.add(Calendar.DAY_OF_YEAR, 1);
+//
+//        // now get "tomorrow"
+//        Date tomorrow = calendar.getTime();
+//        Map<String,String> cookiesMap = Token.getCookies();
+//        Cookie cookies = new Cookie("__cfduid",cookiesMap.get("__cfduid"),"koelapp.testpro.io","/",tomorrow,false,true);
 
-        // get a date to represent "today"
-        Date today = calendar.getTime();
-        System.out.println("today:    " + today);
-
-        // add one day to the date/calendar
-        calendar.add(Calendar.DAY_OF_YEAR, 1);
-
-        // now get "tomorrow"
-        Date tomorrow = calendar.getTime();
-        Map<String,String> cookiesMap = Token.getCookies();
-        Cookie cookies = new Cookie("__cfduid",cookiesMap.get("__cfduid"),"koelapp.testpro.io","/",tomorrow,false,true);
-
-        driver.manage().addCookie(cookies);
+        LocalStorage local = ((WebStorage) driver).getLocalStorage();
+        local.setItem("jwt-token", Token.getCookies());
         driver.get("https://koelapp.testpro.io");
 
     }

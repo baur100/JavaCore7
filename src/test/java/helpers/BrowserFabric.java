@@ -35,6 +35,7 @@ public class BrowserFabric {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         options.addArguments("window-size=1400,1000");
+        options.setAcceptInsecureCerts(true);
         System.setProperty("webdriver.chrome.driver","chromedriver.exe");
         return new ChromeDriver(options);
     }
